@@ -51,6 +51,8 @@ body, h2, p {
 
 .beneficios{
     background-color: #1abc9c;
+    display: flex;
+    flex-direction: row;
 }
 
 .carousel-gallery {
