@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------FOOTER--------------- */
+footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 40px 0;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav ul,
+.social-nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.footer-nav li a:visited,
+.footer-nav li a:link,
+.social-nav li a:visited,
+.social-nav li a:link{
+    text-decoration: none;
+    color: #888;
+}
+
+.logo-twitter:hover{
+    color: #00aced;
+}
+
+.logo-instagram:hover{
+    color: #517fa4;
+}
+
+.logo-facebook:hover{
+    color: #3b5998;
+}
+
+.logo-youtube:hover{
+    color: #FF0000;
+}
+
+.logo-youtube,
+.logo-facebook,
+.logo-instagram,
+.logo-twitter{
+    transition: color 0.2s;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
