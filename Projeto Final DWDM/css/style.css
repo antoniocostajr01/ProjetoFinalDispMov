@@ -1,0 +1,186 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+body, h2, p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.slogan {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding: 60px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+.home-section {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 170px 20px;
+}
+.figurinhas{
+    width: 40px;
+}
+
+.beneficios{
+    background-color: #1abc9c;
+}
+
+.carousel-gallery {
+    margin-bottom: 40px;
+}
+.gallery-slider img {
+    width: 100%;
+    border-radius: 8px;
+}
+.grid-gallery {
+    margin-bottom: 40px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.grid-image {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.grid-image:hover {
+    transform: scale(1.05);
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.footer-menu li {
+    display: inline;
+}
+.footer-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-menu a:hover {
+    color: #1abc9c;
+}
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+@media only screen and (max-width: 400px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-section, .about-section, .services-section, .gallery-section, .testimonials-section, .faq-section, .contact-section {
+        padding: 40px 15px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .lightbox-content {
+        width: 90%;
+    }
+    #caption {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navbar-nav {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lightbox-content {
+        width: 85%;
+    }
+    #caption {
+        font-size: 17px;
+    }  
+    .container {
+        padding: 0 15px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+}
+    @media only screen and (min-width: 1200px) {
+    .navbar-nav {
+        justify-content: space-around;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .lightbox-content {
+        width: 80%;
+    }
+    #caption {
+        font-size: 18px;
+    }
+}
