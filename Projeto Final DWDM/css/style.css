@@ -117,21 +117,59 @@ body, h2, p {
     padding: 10px 20px;
     font-size: 18px;
 }
-.footer-menu li {
-    display: inline;
+footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 40px 0;
 }
-.footer-menu a {
-    color: #ffffff;
+
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav ul,
+.social-nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.footer-nav li a:visited,
+.footer-nav li a:link,
+.social-nav li a:visited,
+.social-nav li a:link{
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: #888;
 }
-.footer-menu a:hover {
-    color: #1abc9c;
+
+.logo-twitter:hover{
+    color: #00aced;
 }
-.footer-section p {
-    margin: 0;
-    font-size: 14px;
-    color: #ffffff;
+
+.logo-instagram:hover{
+    color: #517fa4;
+}
+
+.logo-facebook:hover{
+    color: #3b5998;
+}
+
+.logo-youtube:hover{
+    color: #FF0000;
+}
+
+.logo-youtube,
+.logo-facebook,
+.logo-instagram,
+.logo-twitter{
+    transition: color 0.2s;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
 }
 @media only screen and (max-width: 400px) {
     .navbar-nav {
