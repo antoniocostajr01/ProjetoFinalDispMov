@@ -173,6 +173,52 @@ footer p{
     text-align: center;
     margin-top: 20px;
 }
+
+.map-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.newsletter-section {
+    padding: 60px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.map-section p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.newsletter-image {
+    flex: 2.5;
+    text-align: center;
+    
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-content h2 {
+    margin-bottom: 10px;
+
+}
+
+.newsletter-content p {
+    margin-bottom: 20px;
+
+}
+
+.newsletter-form .form-campos {
+    margin-bottom: 15px;
+}
+
+.newsletter-form .btn-primary {
+    background-color: #1abc9c;
+    border: none;
+}
 @media only screen and (max-width: 400px) {
     .navbar-nav {
         flex-direction: column;
@@ -228,5 +274,15 @@ footer p{
     }
     #caption {
         font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletter-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .newsletter-image, .newsletter-content {
+        max-width: 100%;
     }
 }
