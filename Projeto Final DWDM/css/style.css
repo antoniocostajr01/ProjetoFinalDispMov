@@ -47,7 +47,6 @@ body, h2, p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
     color: #fff;
     text-align: center;
     padding: 170px 20px;
@@ -123,24 +122,7 @@ body, h2, p {
 .grid-image:hover {
     transform: scale(1.05);
 }
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-.lightbox-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
+
 .close {
     position: absolute;
     top: 30px;
@@ -173,28 +155,27 @@ body, h2, p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #1abc9c;
+    border: 4px solid #3b5998;
 }
 
 .testimonials-slider{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    min-width: 80%;
+    margin: 0 a;
 }
 
 .testimonials-slider > div {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 300px;
-    height: 400px;
+    min-width: 300px;
+    min-height:400px;
     padding: 15px; 
-    border: 1px solid #ddd; 
+    /* border: 1px solid #ddd;  */
     border-radius: 10px; 
     background-color: #f9f9f9; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 100px;
 }
 
 .testimonials-slider span {
