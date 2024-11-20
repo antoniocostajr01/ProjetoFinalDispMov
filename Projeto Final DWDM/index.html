@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Importação fonte de texto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Importação do Slink -->
-    <link rel="stylesheet" type="text/css" href="href= https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -45,21 +40,21 @@
     <section class="section-beneficios">   
         <div class="beneficios-box">
             <div class="beneficio">
-                <div class="contorno-icone-benef"></div>
+                <div class="contorno-icone-benef bnf1"></div>
                 <div class="caixa-texto">
                 <p class="titulo-beneficio"><strong>Carregamento Rápido e Fácil</strong></p>
                 <p>Recarregue seu carro em estações rápidas e convenientes</p>
                 </div>
             </div>
             <div class="beneficio">
-                <div class="contorno-icone-benef"></div>
+                <div class="contorno-icone-benef bnf2"></div>
                 <div class="caixa-texto">
                 <p class="titulo-beneficio"><strong>Assistência 24/7</strong></p>
                 <p>Conte com uma equipe dedicada de suporte disponível</p>
                 </div>
             </div>
             <div class="beneficio">
-                <div class="contorno-icone-benef"></div>
+                <div class="contorno-icone-benef bnf3"></div>
                 <div class="caixa-texto">
                 <p class="titulo-beneficio"><strong>Garantia Estendida</strong></p>
                 <p>Proteja seu investimento por mais tempo.</p>
@@ -95,6 +90,9 @@
                 <div><img src="img/car7.jpg" alt="Carro 7"></div>
                 <div><img src="img/car8.jpg" alt="Carro 8"></div>
                 <div><img src="img/car9.jpg" alt="Carro 9"></div>
+                <div><img src="img/car10.jpg" alt="Carro 10"></div>
+                <div><img src="img/car11.jpg" alt="Carro 11"></div>
+                <div><img src="img/car12.jpg" alt="Carro 12"></div>
             </div>
         </div>
         <div class="grid-gallery">
@@ -109,10 +107,19 @@
                 <img src="img/car7.jpg" alt="Renault Kwid E-Tech" class="grid-image">
                 <img src="img/car8.jpg" alt="Volvo XC40" class="grid-image">
                 <img src="img/car9.jpg" alt="GWM Haval H6 GT" class="grid-image">
+                <img src="img/car10.jpg" alt="BYD Song Plus" class="grid-image">
+                <img src="img/car11.jpg" alt="GWM Ora 3" class="grid-image">
+                <img src="img/car12.jpg" alt="BMW i8" class="grid-image">
             </div>
         </div>
     </div>
 </section>
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightboxImage">
+    <div id="caption"></div>
+</div>
     
     <section id="testimonials" class="testimonials-section"> 
         <div class="container">
@@ -192,48 +199,7 @@
         </div>
     </section>
 
-    
-    <section id="contact" class="contact-section bg-light">
-        <div class="container d-flex align-items-center">
-            <div class="contact-content">
-                <h2>Fale Conosco</h2>
-                <p>Entre em contato conosco para dúvidas, sugestões ou suporte. Estamos aqui para ajudar!</p>
-                <form id="contactForm" class="contact-form">
-                    <div class="form-campos">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-campos">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-campos">
-                        <label for="phone">Telefone</label>
-                        <input type="tel" id="phone" class="form-control" required>
-                    </div>
-                    <div class="form-campos">
-                        <label for="service">Serviço de Interesse</label>
-                        <select id="service" class="form-control" required>
-                            <option>Aluguel Diário</option>
-                            <option>Plano Mensal</option>
-                            <option>Plano Empresarial</option>
-                        </select>
-                    </div>
-                    <div class="form-campos">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-            <div class="contact-image">
-                <img src="img/FaleConosco.jpg" alt="Fale Conosco">
-            </div>
-        </div>
-    </section>
-    
-
-    <section id="faq" class="faq-section bg-light">
+    <section id="faq" class="faq-section bg-light"> 
         <div class="container">
             <h2>Perguntas Frequentes</h2>
             <div class="accordion" id="faqAccordion">
@@ -241,56 +207,110 @@
                     <div class="card-header" id="faqOne">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
-                                Como funciona a locação de veículos elétricos?
+                                Quais são as vantagens de comprar um veículo elétrico?
                             </button>
                         </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Os veículos elétricos oferecem muitas vantagens, como menor custo de manutenção, maior eficiência energética, isenção de impostos em alguns estados e uma redução significativa das emissões de gases poluentes.
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header" id="faqTwo">
                         <h2 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
-                                Preciso de habilitação especial?
+                                Qual a autonomia de um veículo elétrico?
                             </button>
                         </h2>
                     </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            A autonomia dos veículos elétricos varia conforme o modelo e a capacidade da bateria, mas a maioria dos carros pode rodar entre 250 e 500 km com uma carga completa.
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="card-header" id="faqThree">
                         <h2 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
-                                Há pontos de recarga inclusos?
+                                Como funciona o processo de carregamento do veículo?
                             </button>
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
                         <div class="card-body">
-                            Sim, nossos veículos possuem acesso a pontos de recarga em várias cidades.
+                            O carregamento é simples e pode ser feito em casa usando uma tomada comum ou um carregador específico de parede. Existem também postos de recarga rápida, onde você pode carregar seu veículo em aproximadamente 30 minutos.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour">
+                                O preço dos veículos elétricos é mais alto que os convencionais?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Sim, o custo inicial de um veículo elétrico pode ser mais alto, mas o investimento se paga ao longo do tempo devido à economia com combustível e manutenção, além dos incentivos fiscais que muitos estados oferecem.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive">
+                                Existe algum tipo de garantia para os veículos elétricos?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Sim, todos os nossos veículos elétricos vêm com uma garantia de fábrica que cobre tanto o carro quanto a bateria. A garantia da bateria é geralmente mais longa, variando entre 5 e 8 anos, dependendo do modelo.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="sitemap" class="sitemap-section bg-light">
+    <section id="contact" class="contact-section"> 
         <div class="container">
-            <h2>Mapa do Site</h2>
-            <ul class="sitemap-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="/Projeto Final DWDM/sobre.html">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Fale Conosco</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#map">Mapa com Pontos de Recarga</a></li>
-                <li><a href="#map">Baixe nosso app</a></li>
-            </ul>
+            <h2>Fale Conosco</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Carro de Interesse</label>
+                    <select id="service" class="form-control" required>
+                        <option>Veículo Elétrico Compacto</option>
+                        <option>Veículo Elétrico Sedan</option>
+                        <option>Veículo Elétrico SUV</option>
+                        <option>Veículo Elétrico de Luxo</option>
+                        <option>Consultoria para Compra de Veículo Elétrico</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
     </section>
-    
-    
+
     <footer>
         <div class="footer-top">
             <nav class="footer-nav">
@@ -312,22 +332,22 @@
             <nav class="social-nav">
                 <ul>
                     <li>
-                        <a href="https://twitter.com/" target="_blank">
+                        <a href="#">
                             <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/" target="_blank">
+                        <a href="#">
                             <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="https://pt-br.facebook.com/" target="_blank">
+                        <a href="#">
                             <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/" target="_blank">
+                        <a href="#">
                             <ion-icon class="logo-youtube" name="logo-youtube"></ion-icon>
                         </a>
                     </li>
@@ -344,9 +364,9 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-
-    <script type="text/javascript" src="/Projeto Final DWDM/js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

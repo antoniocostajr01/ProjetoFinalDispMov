@@ -47,6 +47,7 @@ body, h2, p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
     color: #fff;
     text-align: center;
     padding: 170px 20px;
@@ -86,6 +87,24 @@ body, h2, p {
     min-height: 110px;
     border-radius: 50%;
 }
+.bnf1{
+    background-image: url(../img/carregamento.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bnf2{
+    background-image: url(../img/assistencia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bnf3{
+    background-image: url(../img/garantia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .caixa-texto{
     display: flex;
     flex-direction: column;
@@ -122,7 +141,24 @@ body, h2, p {
 .grid-image:hover {
     transform: scale(1.05);
 }
-
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
 .close {
     position: absolute;
     top: 30px;
@@ -155,27 +191,28 @@ body, h2, p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 4px solid #3b5998;
+    border: 5px solid #1abc9c;
 }
 
 .testimonials-slider{
-    min-width: 80%;
-    margin: 0 a;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .testimonials-slider > div {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-width: 300px;
-    min-height:400px;
+    max-width: 300px;
+    height: 400px;
     padding: 15px; 
-    /* border: 1px solid #ddd;  */
+    border: 1px solid #ddd; 
     border-radius: 10px; 
     background-color: #f9f9f9; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0 100px;
 }
 
 .testimonials-slider span {
@@ -294,124 +331,6 @@ footer p{
     background-color: #1abc9c;
     border: none;
 }
-
-.contact-form .form-control {
-    width: 140%; 
-    height: 50px;
-    font-size: 16px;
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-section {
-    padding: 40px 0;
-}
-
-.contact-section .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact-content {
-    flex: 1;
-    text-align: left;
-    padding-left: 98px;
-}
-
-.contact-content h2 {
-    margin-bottom: 10px;
-}
-
-.contact-content p {
-    margin-bottom: 20px;
-}
-
-.contact-form .form-campos {
-    margin-bottom: 15px;
-}
-
-.contact-form .btn-primary {
-    background-color: #1abc9c;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form .btn-primary:hover {
-    background-color: #16a085;
-}
-
-.contact-image {
-    flex: 2.5;
-    text-align: center;
-    padding-left: 150px;
-}
-
-.contact-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .contact-section .container {
-        flex-direction: column-reverse; /* Altera a ordem para que o formulário venha antes da imagem */
-    }
-
-    .contact-content,
-    .contact-image {
-        flex: none;
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-
-.sitemap-section {
-    padding: 40px 0;
-    background-color: #f8f9fa;
-}
-
-.sitemap-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.sitemap-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sitemap-list li {
-    margin: 5px 15px;
-    text-align: center;
-}
-
-.sitemap-list a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 16px;
-}
-
-
-/* Garantindo boa visualização em telas pequenas */
-.sitemap-list a:active {
-    color: #0056b3;
-}
-
-
 @media only screen and (max-width: 400px) {
     .navbar-nav {
         flex-direction: column;
