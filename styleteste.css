@@ -1,0 +1,22 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     background-color: #444;
+}
+
+
+/* Propriedade para todos os carrosseis */
+.carousel-inner{
+     width: 50%;
+     margin: 0 auto;
+     margin-top: 10px;
+}
+
+/* Carrossel 2 */
+.carousel-control-next, .carousel-control-prev{
+     width: 40%;
+}
