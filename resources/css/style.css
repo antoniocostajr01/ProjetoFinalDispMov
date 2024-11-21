@@ -315,7 +315,6 @@ footer p{
 
 .newsletter-content h2 {
     margin-bottom: 10px;
-
 }
 
 .newsletter-content p {
@@ -331,6 +330,124 @@ footer p{
     background-color: #1abc9c;
     border: none;
 }
+
+.contact-form .form-control {
+    width: 140%; 
+    height: 50px;
+    font-size: 16px;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 98px;
+}
+
+.contact-content h2 {
+    margin-bottom: 10px;
+}
+
+.contact-content p {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-campos {
+    margin-bottom: 15px;
+}
+
+.contact-form .btn-primary {
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #16a085;
+}
+
+.contact-image {
+    flex: 2.5;
+    text-align: center;
+    padding-left: 150px;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-section .container {
+        flex-direction: column-reverse; /* Altera a ordem para que o formulário venha antes da imagem */
+    }
+
+    .contact-content,
+    .contact-image {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+.sitemap-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.sitemap-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sitemap-list li {
+    margin: 5px 15px;
+    text-align: center;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+
+/* Garantindo boa visualização em telas pequenas */
+.sitemap-list a:active {
+    color: #0056b3;
+}
+
+
 @media only screen and (max-width: 400px) {
     .navbar-nav {
         flex-direction: column;

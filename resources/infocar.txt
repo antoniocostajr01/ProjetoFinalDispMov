@@ -1,0 +1,67 @@
+BMW i3
+•	Motor e Potência: Motor elétrico com potência de 125 kW (170 cv) e torque de 250 Nm. A versão esportiva i3s oferece 135 kW (184 cv) e torque de 270 Nm.
+•	Bateria e Autonomia: Bateria de 42,2 kWh, proporcionando uma autonomia de até 260 km no ciclo WLTP. A capacidade útil da bateria é de cerca de 38 kWh.
+•	Desempenho: Aceleração de 0 a 100 km/h em aproximadamente 7,3 segundos para o i3 e 6,9 segundos para o i3s.
+•	Construção e Design: Estrutura em fibra de carbono, o que reduz o peso e contribui para a eficiência energética. Design futurista e minimalista, com um interior sustentável e uma mistura de materiais de baixo impacto ambiental
+
+BYD Dolphin
+•	Motor e Potência: Opções de motor de 70 kW (94 cv) e 130 kW (174 cv) para diferentes versões, com torque em torno de 180 Nm.
+•	Bateria e Autonomia: Bateria de 44,9 kWh, que garante uma autonomia entre 300 e 400 km, dependendo da versão e do tipo de uso.
+•	Desempenho e Recarga: Voltado para o uso urbano e diário, com capacidade de recarga rápida que permite até 80% da carga em cerca de 30 minutos, dependendo da estação de carregamento.
+•	Interior e Conectividade: Oferece espaço para cinco ocupantes, com um interior moderno e tecnologia de infotainment integrada, com foco em conforto e economia de energia.
+
+Chevrolet Bolt EV
+•	Motor e Potência: Motor de 150 kW (200 cv) com torque de 360 Nm.
+•	Bateria e Autonomia: Bateria de 66 kWh, com uma autonomia de até 416 km no ciclo EPA, ideal para trajetos longos.
+•	Desempenho e Carregamento: Acelera de 0 a 100 km/h em cerca de 6,5 segundos, com recarga rápida que permite até 160 km em 30 minutos usando carregadores rápidos.
+•	Tecnologia e Conforto: Sistema de infotainment com tela de 10,2 polegadas, suporte para Apple CarPlay e Android Auto, além de várias assistências de condução para uma experiência mais segura e confortável.
+
+JAC e-JS1
+•	Motor e Potência: Equipado com motor de 30 kW (40 cv) e torque de 150 Nm.
+•	Bateria e Autonomia: Bateria de 30 kWh, com autonomia de aproximadamente 300 km, segundo a fabricante, sendo ideal para o uso urbano.
+•	Desempenho: Aceleração limitada e uma velocidade máxima de cerca de 100 km/h, adequado para uso na cidade.
+•	Design e Custo: Um modelo acessível e prático, focado na eficiência de custos e na mobilidade urbana, com um interior simples, porém funcional.
+
+Nissan Leaf
+•	Motor e Potência: A versão básica oferece 110 kW (150 cv), enquanto a versão Leaf Plus possui motor de 160 kW (214 cv), com torque de até 320 Nm.
+•	Bateria e Autonomia: O modelo com bateria de 40 kWh tem autonomia de até 270 km, enquanto a versão de 62 kWh pode alcançar até 385 km.
+•	Desempenho: Aceleração de 0 a 100 km/h em cerca de 7,9 segundos (versão Plus).
+•	Sistemas de Segurança e Condução Autônoma: Equipado com o sistema ProPILOT, que oferece condução semi-autônoma, além de tecnologias de assistência, como frenagem de emergência e monitoramento de ponto cego.
+
+Peugeot e-208 GT
+•	Motor e Potência: Motor de 100 kW (136 cv) e 260 Nm de torque.
+•	Bateria e Autonomia: Bateria de 50 kWh, com autonomia de até 340 km no ciclo WLTP.
+•	Desempenho: Acelera de 0 a 100 km/h em 8,1 segundos, com foco em eficiência energética e performance urbana.
+•	Design e Tecnologia: Apresenta um design esportivo com interior moderno, painel digital, e várias opções de personalização, além de recursos de conectividade como Apple CarPlay e Android Auto.
+
+Renault Kwid E-Tech
+•	Motor e Potência: Motor de 48 kW (65 cv) e torque de 113 Nm.
+•	Bateria e Autonomia: Autonomia de até 298 km no ciclo urbano.
+•	Desempenho e Eficiência: Desempenho mais modesto, ideal para uso urbano. Conta com funções regenerativas de bateria para prolongar a autonomia.
+•	Custo-Benefício: É um dos elétricos mais acessíveis, com foco em mobilidade urbana e eficiência, sendo uma escolha para quem busca um elétrico econômico e prático.
+Volvo XC40 Recharge
+•	Motor e Potência: Motor duplo, que gera um total de 300 kW (408 cv) e torque de 660 Nm, com tração integral.
+•	Bateria e Autonomia: Bateria de 78 kWh, com autonomia de até 418 km.
+•	Desempenho: Acelera de 0 a 100 km/h em cerca de 4,9 segundos, combinando potência e eficiência.
+•	Tecnologia e Segurança: Inclui o sistema de infotainment com Google integrado, além de avançadas assistências de segurança, como frenagem automática e suporte de direção em alta velocidade.
+
+GWM Haval H6 GT
+•	Motor e Potência: Disponível em versões híbridas plug-in com motor a combustão e elétrico combinados para maior economia de combustível e menor emissão de poluentes.
+•	Autonomia: No modo totalmente elétrico, a autonomia é de até 50 km, ideal para trajetos urbanos curtos.
+•	Conforto e Tecnologia: SUV de porte médio com interior espaçoso, telas digitais e assistências ao motorista, incluindo piloto automático adaptativo e monitoramento de ponto cego.
+
+BYD Song Plus
+•	Motor e Potência: O modelo híbrido plug-in combina motor elétrico com motor a combustão, proporcionando desempenho eficiente e baixo consumo.
+•	Bateria e Autonomia: A bateria de 51 kWh oferece até 500 km de autonomia total no modo combinado (elétrico + combustível).
+•	Desempenho e Conforto: Aceleração e performance refinadas para um SUV familiar, com interiores modernos e opções avançadas de infotainment.
+
+GWM Ora 3
+•	Motor e Potência: Motor de 48 kW, focado na eficiência urbana.
+•	Bateria e Autonomia: Bateria com autonomia de cerca de 300 km, ideal para trajetos diários na cidade.
+•	Design e Funcionalidade: Compacto e prático, oferece espaço adequado para quatro passageiros e itens básicos de conforto, sendo focado no custo-benefício e na mobilidade urbana.
+
+BMW i8
+•	Motor e Potência: Motor híbrido plug-in, combinando um motor elétrico e um motor a combustão de 1.5L com potência combinada de 275 kW (374 cv).
+•	Desempenho e Eficiência: Acelera de 0 a 100 km/h em 4,4 segundos, com velocidade máxima limitada a 250 km/h.
+•	Autonomia: A bateria permite autonomia de até 55 km em modo totalmente elétrico, enquanto no modo combinado a autonomia é significativamente estendida.
+•	Design e Construção: Com design esportivo e materiais leves, como fibra de carbono, é um dos híbridos de alto desempenho mais icônicos, destacando-se pela eficiência e pelo visual futurista.
