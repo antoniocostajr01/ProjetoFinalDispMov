@@ -6,3 +6,6 @@ https://getbootstrap.com.br/
 
 Documentação Bootstrap 5
 https://getbootstrap.com/
+
+Documentação Slick
+https://kenwheeler.github.io/slick/
