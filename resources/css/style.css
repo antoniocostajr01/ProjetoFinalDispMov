@@ -43,7 +43,7 @@ body, h2, p {
 .home-section {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5 ),rgba(0, 0, 0, 0.5 )),
-        url(../img/header3.jpeg);
+        url(/vendors/img/header3.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,19 +88,19 @@ body, h2, p {
     border-radius: 50%;
 }
 .bnf1{
-    background-image: url(../img/carregamento.png);
+    background-image: url(/vendors/img/carregamento.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bnf2{
-    background-image: url(../img/assistencia.jpg);
+    background-image: url(/vendors/img/assistencia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bnf3{
-    background-image: url(../img/garantia.png);
+    background-image: url(/vendors/img/garantia.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

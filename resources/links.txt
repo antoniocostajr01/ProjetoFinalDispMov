@@ -1,0 +1,8 @@
+Biblioteca de icones todos em SVG:
+https://ionic.io/ionicons
+
+Documentação Bootstrap 4
+https://getbootstrap.com.br/
+
+Documentação Bootstrap 5
+https://getbootstrap.com/
