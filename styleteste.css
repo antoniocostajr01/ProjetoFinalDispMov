@@ -5,17 +5,27 @@
 }
 
 body{
-     background-color: #444;
+     background-color: rgb(179, 241, 241);
+}
+h1{
+     text-transform: uppercase;
+     text-decoration: underline;
+     font-weight: 300;
+     max-width: 600px;
+     margin: 0 auto;
+     margin-bottom: 50px;
 }
 
+h1 span{
+     font-weight: 700;
+}
 
 /* Propriedade para todos os carrosseis */
 .carousel-inner{
      width: 30%;
      margin: 0 auto;
      margin-top: 10px;
-     min-height: 50%;
-     max-height: 50%;
+     height: 370px;
      background-color: #f9f9f9;
 }
 

@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Importação do slick-->
-    <link rel="stylesheet" type="text/css" href="vendors/lib/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="vendors/lib/slick/slick-theme.css"/>
-
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -86,29 +85,6 @@
         </div>
 </section>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="vendors/img/car1.jpg" alt="Primeiro Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="vendors/img/car2.jpg" alt="Segundo Slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-  </div>
-
-
 <section id="gallery" class="section-bootstrap">
     <div class="container">
         <h2><strong>Conheça Nossa frota</strong></h2>
@@ -130,49 +106,41 @@
         </div>
     </div>
 </section>
-
-<div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightboxImage">
-    <div id="caption"></div>
-</div>
-    
-    <section id="testimonials" class="testimonials-section"> 
-        <div class="container">
-            <h2>O que nossos clientes dizem</h2>
-            <div class="testimonials-slider">
-                <div>
-                    <div class="box-picture"><img src="/vendors/img/mariana.jpg" class="testimonials-image" alt="Mariana Silva"></div>
-                    <span>Mariana Silva</span>
-                    <p>"Comprar um carro com a EcoDrive foi uma experiência incrível! Nunca pensei que dirigir um veículo elétrico seria tão fácil e prático. A plataforma online é super intuitiva, e o atendimento ao cliente me ajudou em cada etapa. Recomendo para quem busca um produto moderno e sustentável!"</p>
-                </div>
-                <div>
-                    <div class="box-picture"><img src="/vendors/img/eduardo.jpg" alt="Eduardo Santos" class="testimonials-image"></div>
-                    <span>Eduardo Santos</span>
-                    <p>"EcoDrive é a solução perfeita para quem quer contribuir com o meio ambiente sem abrir mão de conforto e tecnologia. A autonomia dos veículos é ótima, e o acesso aos pontos de recarga me deu toda a tranquilidade para explorar a cidade. Definitivamente, uma compra que recomendo!"</p>
-                </div>
-                <div>
-                    <div class="box-picture"><img src="/vendors/img/carolina.jpg" alt="Carolina Moura" class="testimonials-image"></div>
-                    <span>Carolina Moura</span>
-                    <p>"Comprei meu veículo com a EcoDrive e não me decepcionei. O processo de compra foi rápido e eficiente, e os veículos são extremamente confortáveis e silenciosos. Além de fazer bem ao planeta, também é uma escolha econômica."</p>
-                </div>
-                <div>
-                    <div class="box-picture"><img src="/vendors/img/felipe.jpg" alt="Felipe Andrade" class="testimonials-image"></div>
-                    <span>Felipe Andrade</span>
-                    <p>"Escolhi a EcoDrive e fiquei surpreso com a tecnologia dos veículos! Conexão com o celular, navegação avançada e ainda a possibilidade de monitorar a carga em tempo real. Muito prático e funcional."</p>
-                </div>
-                <div>
-                    <div class="box-picture"><img src="/vendors/img/bruna.jpg" alt="Bruna Oliveira" class="testimonials-image"></div>
-                    <span>Bruna Oliveira</span>
-                    <p>"A EcoDrive mudou minha visão sobre mobilidade elétrica. Está sendo uma experiência muito diferente e positiva. O atendimento foi impecável, e o carro, além de lindo, é extremamente eficiente."</p>
-                </div>
-                <div>
-                    <div class="box-picture"><img src="/vendors/img/lucas.jpg" alt="Lucas Farias" class="testimonials-image"></div>
-                    <span>Lucas Farias</span>
-                    <p>"Se você quer combinar conforto, sustentabilidade e um atendimento de primeira, a EcoDrive é a escolha certa. Todo o processo, desde o test drive até a compra, foi super simples e profissional."</p>
-                </div>
-            </div>
+<section>
+    <h2><span>Depoimentos</span> de <span>clientes</span></h2>
+    <div class="autoplay logos col-12">
+        <div class="testimonials-slider">
+            <img src="/vendors/img/mariana.jpg" class="testimonials-image" alt="Mariana Silva">
+            <h3>Mariana Silva</h3>
+            <p>"Comprar um carro com a EcoDrive foi uma experiência incrível! Nunca pensei que dirigir um veículo elétrico seria tão fácil e prático. A plataforma online é super intuitiva, e o atendimento ao cliente me ajudou em cada etapa. Recomendo para quem busca um produto moderno e sustentável!"</p>
         </div>
+        <div class="testimonials-slider">
+            <div class="box-picture"><img src="/vendors/img/eduardo.jpg" alt="Eduardo Santos" class="testimonials-image"></div>
+            <h3>Eduardo Santos</h3>
+            <p>"EcoDrive é a solução perfeita para quem quer contribuir com o meio ambiente sem abrir mão de conforto e tecnologia. A autonomia dos veículos é ótima, e o acesso aos pontos de recarga me deu toda a tranquilidade para explorar a cidade. Definitivamente, uma compra que recomendo!"</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="box-picture"><img src="/vendors/img/carolina.jpg" alt="Carolina Moura" class="testimonials-image"></div>
+            <h3>Carolina Moura</h3>
+            <p>"Comprei meu veículo com a EcoDrive e não me decepcionei. O processo de compra foi rápido e eficiente, e os veículos são extremamente confortáveis e silenciosos. Além de fazer bem ao planeta, também é uma escolha econômica."</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="box-picture"><img src="/vendors/img/felipe.jpg" alt="Felipe Andrade" class="testimonials-image"></div>
+            <h3>Felipe Andrade</h3>
+            <p>"Escolhi a EcoDrive e fiquei surpreso com a tecnologia dos veículos! Conexão com o celular, navegação avançada e ainda a possibilidade de monitorar a carga em tempo real. Muito prático e funcional."</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="box-picture"><img src="/vendors/img/bruna.jpg" alt="Bruna Oliveira" class="testimonials-image"></div>
+            <h3>Bruna Oliveira</h3>
+            <p>"A EcoDrive mudou minha visão sobre mobilidade elétrica. Está sendo uma experiência muito diferente e positiva. O atendimento foi impecável, e o carro, além de lindo, é extremamente eficiente."</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="box-picture"><img src="/vendors/img/lucas.jpg" alt="Lucas Farias" class="testimonials-image"></div>
+            <h3>Lucas Farias</h3>
+            <p>"Se você quer combinar conforto, sustentabilidade e um atendimento de primeira, a EcoDrive é a escolha certa. Todo o processo, desde o test drive até a compra, foi super simples e profissional."</p>
+        </div>
+        </div>
+    </div>
     </section>
 
     <section id="map" class="map-section">
@@ -436,20 +404,28 @@
             </p>
         </div>
     </footer>
+
     
+    <!-- Importação slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+    </script>
+
     <!-- Importação Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!-- Importação do slick -->
-    <script type="text/javascript" src="vendors/lib/slick/slick.min.js"></script>
-
     <!-- Importação Icones -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script type="text/javascript" src="resources/js/script.js"></script>
 
     </body>
 </html>
