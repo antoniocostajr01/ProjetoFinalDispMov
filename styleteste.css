@@ -3,78 +3,61 @@
      padding: 0;
      box-sizing: border-box;
 }
-
-body{
-     background-color: rgb(179, 241, 241);
+html{
+background-color: rgb(18, 81, 81); 
+height: 1000px;
 }
-h1{
-     text-transform: uppercase;
-     text-decoration: underline;
-     font-weight: 300;
-     max-width: 600px;
+
+.carousel {
+     position: relative;
+     width: 600px;
+     /* max-height: 330px;
+     min-height: 330px; */
      margin: 0 auto;
-     margin-bottom: 50px;
+     border-radius: 10px;
 }
 
-h1 span{
-     font-weight: 700;
+.frota {
+     background-color: rgb(18, 81, 81);
+     height: 500px;
+     padding: 30px;
 }
 
-/* Propriedade para todos os carrosseis */
-.carousel-inner{
-     width: 30%;
-     margin: 0 auto;
-     margin-top: 10px;
-     height: 370px;
-     background-color: #f9f9f9;
+.carousel-item > img{
+     vertical-align: middle;
+     border-style: none;
+     /* Tornando fixo o tamanho das imagens do carroussel */
+     height: 300px !important;
+     width: 600px !important;
 }
 
-/* Carrossel 2 */
-.carousel-control-next, .carousel-control-prev{
-     width: 40%;
-}
-.testimonials-section h2{
-     text-align: center;
-     margin:30px ;
-}
-
-.testimonials-image{
-     width: 100px;
-     height: 100px;
-     border-radius: 50%;
-     border: 5px solid #1abc9c;
-}
-
-.testimonials-slider{
+.carousel-indicators {
+     right: 0;
+     bottom: -50px !important;  
+     left: 0;
+     z-index: 15;
+     display: -ms-flexbox;
      display: flex;
-     flex-wrap: wrap;
-     gap: 20px;
+     -ms-flex-pack: center;
      justify-content: center;
+     padding-top: 100px !important; /*Distancia do indicador do slide em relação ao conteudo */
+     margin-right: 15%;
+     margin-left: 15%;
+     list-style: none;
 }
 
-.testimonials-slider > div {
+.carousel-control-next, .carousel-control-prev {
+     position: absolute !important; /*Mantendo os botões fixos */
+     top: 0;
+     bottom: 0;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
+     -ms-flex-align: center;
      align-items: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     width: 20px !important; /*Distancia dos botões do slide em relação ao conteudo */
+     margin: 0px -60px !important;
      text-align: center;
-     max-width: 300px;
-     height: 400px;
-     padding: 15px; 
-     border: 1px solid #ddd; 
-     border-radius: 10px; 
-     background-color: #f9f9f9; 
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials-slider span {
-     font-weight: bold;
-     font-size: 20px;
-     margin-top: 10px;
-     color: #555;
-     margin-bottom: 10px;
-}
-
-.testimonials-slider p {
-     text-align: justify;
-     font-size: 15px;
+     opacity: .5;
 }
