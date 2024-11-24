@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
 }
+
+
 
 .container {
     width: 100%;
@@ -80,7 +85,7 @@ body{
 }
 .bnf1{
     background-image: url(/vendors/img/carregamento.png);
-    background-size: cover;
+    background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -107,6 +112,67 @@ body{
     margin-bottom: 15px;
 }
 
+.services-section{
+    padding: 20px 20px;
+    height: 540px;
+}
+
+.pre-infos h2{
+    font-size: 180%;
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 100px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 30px 0;
+}
+.services-section>div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-section ion-icon {
+    font-size: 350%;
+    color: #103e62;
+    /* transition: transform 0.3s ease, color 0.3s ease; Suaviza a transição para a cor e o movimento */
+}
+/* 
+.services-section ion-icon:hover {
+    color: #00aced;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+
+
+.box-info{
+    flex-basis: 250px;
+    flex-grow: 1;
+    padding: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.box-info:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    pointer-events:stroke;
+}
+
+h3{
+    text-transform:capitalize;
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box-info p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
 .carousel {
     position: relative;
     width: 600px;
@@ -117,7 +183,8 @@ body{
 }
 
 .frota {
-    background-color: rgb(115, 199, 199);
+    background-color:#103e62;
+    color: #f8f9fa;
     height: 600px;
     padding: 30px;
     margin-top: 10px;

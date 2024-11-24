@@ -4,62 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Bootstrap 4</title>
-
+    
     <link rel="stylesheet" href="styleteste.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Conheça nossa frota</h1>
-    <section class="frota">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="/vendors/img/teste1.png" alt="Primeiro Slide">
-                    <h5>Primeiro Carro</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/vendors/img/teste2.png" alt="Segundo Slide">
-                    <h5>Segundo Carro</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/vendors/img/car3.jpg" alt="Terceiro Slide">
-                    <h5>Terceiro Carro</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/vendors/img/car4.jpg" alt="Quarto Slide">
-                    <h5>Quarto Carro</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/vendors/img/car5.jpg" alt="Quinto Slide">
-                    <h5>Quinto Carro</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+    <section class="services-section">
+        <div>
+            <h2>Nossos Serviços</h2>
+            <p>Inovação, praticidade e responsabilidade ambiental se unem para transformar sua experiência de transporte.</p>
+        </div>
+        <div class="infos">
+            <div class="box-info">
+                <ion-icon name="bag-check-outline"></ion-icon>
+                <h3>Compra Flexível</h3>
+                <p> Encontre a solução ideal para você, com opções de compra personalizáveis e condições que se adaptam ao seu perfil. Com um sistema de compra simplificado, você pode escolher e adquirir o seu veículo elétrico online de forma rápida e prática.</p>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+            <div class="box-info">
+                <ion-icon name="business-outline"></ion-icon>
+                <h3>Planos Personalizados</h3>
+                <p>Para empresas que desejam incorporar sustentabilidade nas operações e renovar suas frotas, oferecemos planos corporativos personalizados, com suporte completo e treinamento para que sua equipe aproveite ao máximo as funcionalidades dos veículos elétricos.</p>
+            </div>
+            <div class="box-info">
+                <ion-icon name="analytics-outline"></ion-icon>
+                <h3>Conectividade e Inovação</h3>
+                <p>Nossa loja está redefinindo o futuro da mobilidade com carros elétricos que combinam tecnologia de ponta e sustentabilidade. Explore modelos que conectam você ao que há de mais inovador, oferecendo desempenho, eficiência e uma experiência de direção revolucionária.</p>
+            </div>
+            <div class="box-info">
+                <ion-icon name="time-outline"></ion-icon>
+                <h3>Suporte 24/7</h3>
+                <p>Nossa equipe está à disposição para oferecer suporte e atendimento ao cliente 24 horas, assegurando que você tenha toda a assistência necessária para aproveitar seu veículo elétrico com tranquilidade.</p>
+            </div>
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Importação a biblioteca de ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

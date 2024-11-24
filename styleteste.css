@@ -3,61 +3,40 @@
      padding: 0;
      box-sizing: border-box;
 }
-html{
-background-color: rgb(18, 81, 81); 
-height: 1000px;
+
+body{
+     background-color: cadetblue !important;
 }
 
-.carousel {
-     position: relative;
-     width: 600px;
-     /* max-height: 330px;
-     min-height: 330px; */
-     margin: 0 auto;
-     border-radius: 10px;
+.services-section{
+     padding: 80px 20px;
 }
-
-.frota {
-     background-color: rgb(18, 81, 81);
-     height: 500px;
-     padding: 30px;
-}
-
-.carousel-item > img{
-     vertical-align: middle;
-     border-style: none;
-     /* Tornando fixo o tamanho das imagens do carroussel */
-     height: 300px !important;
-     width: 600px !important;
-}
-
-.carousel-indicators {
-     right: 0;
-     bottom: -50px !important;  
-     left: 0;
-     z-index: 15;
-     display: -ms-flexbox;
+.services-section>div:nth-child(2){
      display: flex;
-     -ms-flex-pack: center;
-     justify-content: center;
-     padding-top: 100px !important; /*Distancia do indicador do slide em relação ao conteudo */
-     margin-right: 15%;
-     margin-left: 15%;
-     list-style: none;
+     flex-wrap: wrap;
 }
 
-.carousel-control-next, .carousel-control-prev {
-     position: absolute !important; /*Mantendo os botões fixos */
-     top: 0;
-     bottom: 0;
-     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-align: center;
-     align-items: center;
-     -ms-flex-pack: center;
-     justify-content: center;
-     width: 20px !important; /*Distancia dos botões do slide em relação ao conteudo */
-     margin: 0px -60px !important;
-     text-align: center;
-     opacity: .5;
+.services-section ion-icon{
+     font-size: 350%;
+     color: #103e62;
 }
+
+.box-info{
+     flex-basis: 250px;
+     flex-grow: 1;
+     padding: 1%;
+     border: 2px solid #fff;
+}
+
+h3{
+     text-transform:capitalize;
+     font-weight: bold;
+     font-size: 110%;
+     margin-bottom: 15px;
+}
+
+.box-info p{
+     font-size: 90%;
+     line-height: 145%;
+}
+
