@@ -1,10 +1,204 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* ----------FOOTER--------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.4em;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Fundo escuro */
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff; /* Branco */
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff; /* Branco */
+    cursor: pointer;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ddd; /* Cinza claro */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff; /* Branco */
+    background-color: #444; /* Cinza escuro */
+}
+
+/* Responsividade para o menu */
+@media only screen and (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+    }
+
+    .navbar-nav.show {
+        display: flex;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 20px;
+    }
+}
+
+/* Partners Section */
+.partners-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f8f9fa; /* Fundo claro */
+}
+
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners-logos img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.partners-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Team Section */
+.team-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #e9ecef; /* Fundo muito claro */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    max-width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333; /* Cinza escuro */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Fundo escuro */
+    font-size: 14px; /* Tamanho consistente */
+    padding: 40px 20px;
+    color: #ccc; /* Cinza claro */
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #888; /* Cinza médio */
+    font-size: 14px; /* Fonte ajustada */
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+    color: #fff; /* Branco */
+}
+
+.social-nav ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.social-nav a {
+    text-decoration: none;
+    color: #888; /* Cinza médio */
+    font-size: 24px; /* Tamanho ajustado para ícones */
+    transition: color 0.3s;
+}
+
 footer{
     background-color: #333;
     font-size: 80%;
@@ -36,7 +230,7 @@ footer{
 }
 
 .logo-instagram:hover{
-    color: #517fa4;
+    color: rgb(217, 50, 117)
 }
 
 .logo-facebook:hover{
@@ -52,10 +246,65 @@ footer{
 .logo-instagram,
 .logo-twitter{
     transition: color 0.2s;
+    font-size: 30px;
 }
 
 footer p{
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+/* Sitemap Section */
+.sitemap-section {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Fundo claro */
+}
+
+.sitemap-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Cinza escuro */
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sitemap-list li {
+    margin: 5px 15px;
+    text-align: center;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #007bff; /* Azul */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sitemap-list a:hover {
+    color: #0056b3; /* Azul mais escuro */
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul,
+    .social-nav ul {
+        justify-content: center;
+    }
+
+    .sitemap-list {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
