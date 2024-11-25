@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
 }
+
+
 
 .container {
     width: 100%;
@@ -80,7 +85,7 @@ body{
 }
 .bnf1{
     background-image: url(/vendors/img/carregamento.png);
-    background-size: cover;
+    background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -107,70 +112,128 @@ body{
     margin-bottom: 15px;
 }
 
+.services-section{
+    padding: 20px 20px;
+    height: 500px;
+}
 
-.carousel-gallery {
-    margin-bottom: 40px;
-}
-.gallery-slider img {
-    width: 100%;
-    border-radius: 8px;
-}
-.grid-gallery {
-    margin-bottom: 40px;
-}
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-.grid-image {
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-.grid-image:hover {
-    transform: scale(1.05);
-}
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-.lightbox-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-.close {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.close:hover,
-.close:focus {
-    color: #bbb;
+.pre-infos h2{
+    font-size: 180%;
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-transform: uppercase;
     text-decoration: none;
-    cursor: pointer;
-}
-#caption {
+    font-weight: 100px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
-    color: #ccc;
-    padding: 10px 20px;
-    font-size: 18px;
+    margin: 30px 0;
+}
+.services-section>div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-section ion-icon {
+    font-size: 350%;
+    color: #103e62;
+    /* transition: transform 0.3s ease, color 0.3s ease; Suaviza a transição para a cor e o movimento */
+}
+/* 
+.services-section ion-icon:hover {
+    color: #00aced;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+
+
+.box-info{
+    flex-basis: 250px;
+    flex-grow: 1;
+    padding: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.box-info:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.box-info:hover ion-icon {
+    color: #00aced;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+h3{
+    text-transform:capitalize;
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box-info p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 600px;
+    /* max-height: 330px;
+    min-height: 330px; */
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.frota {
+    background-color:#103e62;
+    color: #f8f9fa;
+    height: 600px;
+    padding: 30px;
+    margin-top: 10px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-item > img{
+    vertical-align: middle;
+    border-style: none;
+    /* Tornando fixo o tamanho das imagens do carroussel */
+    height: 300px !important;
+    width: 600px !important;
+}
+
+.carousel-indicators {
+    right: 0;
+    bottom: -50px !important;  
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 100px !important; /*Distancia do indicador do slide em relação ao conteudo */
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute !important; /*Mantendo os botões fixos */
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 20px !important; /*Distancia dos botões do slide em relação ao conteudo */
+    margin: 0px -60px !important;
+    text-align: center;
+    opacity: .5;
 }
 /* ----TESTIMONIALS SECTION---- */  
 h2{
@@ -185,54 +248,54 @@ h2{
 h2 span{
     font-weight: 700;
 }
-.logos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+
+.testimonials-carrossel{
+    height: 650px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #8ab4d4;
 }
 
-.testimonials-section h2{
+.swiper {
+    width: 80vw;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 470px !important ;
+    z-index: 1;
+    display: flex;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.swiper-slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #1abc9c;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.swiper-slide h3{
     text-align: center;
     margin:30px ;
 }
 
-.testimonials-image{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #1abc9c;
-    margin: 0 auto;
-}
-
-.testimonials-slider{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 20px;
-    min-height: 300px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 15px;
-    overflow: hidden;
-}
-
-.testimonials-slider h3 {
-    width: fit-content;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 auto;
-    margin-top: 20px;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.testimonials-slider p {
+.swiper-slide p{
     text-align: justify;
     font-size: 15px;
     line-height: 1.5;
@@ -240,6 +303,11 @@ h2 span{
     margin-top: 10px;
     margin-bottom: 0;
 }
+
+.swiper-button-next, .swiper-button-prev {
+    color: #103e62 !important ;
+}
+
 
 footer{
     background-color: #333;
