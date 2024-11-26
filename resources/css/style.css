@@ -475,6 +475,42 @@ footer p{
     border-radius: 10px;
 }
 
+.app-section {
+    background-color: #f5f5f5;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .mockup-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mockup img {
+    max-width: 75%;
+    border-radius: 10px;
+    max-height: 500px;
+    margin-left: 85%;
+  }
+  .mockup-content {
+    margin-left: 30%;
+    flex: 4;
+    padding: 0 1em;
+    text-align: center;
+  }
+  .content h2 {
+    color: #2c5f2d;
+  }
+  .content p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+  .store-buttons a img {
+    max-height: 40px;
+    margin-right: 10px;
+  }
+
 /* Responsividade */
 @media (max-width: 768px) {
     .contact-section .container {
