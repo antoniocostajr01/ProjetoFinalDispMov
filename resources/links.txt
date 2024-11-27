@@ -12,3 +12,6 @@ https://kenwheeler.github.io/slick/
 
 Drive
 https://drive.google.com/drive/folders/1Sj_duam68_fP6jUebUhNc-L0Lkuyaw8H?usp=drive_link
+
+SwiperJS
+https://swiperjs.com/

@@ -59,13 +59,15 @@ body{
  */
 
 .section-beneficios{
-    background-color:#4DD68B;
+    background-color:#3b5998;
     padding: 15px 0;
+    color: #fff;
 }
 
 .beneficios-box{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -122,7 +124,7 @@ body{
     font-family: 'Lato', 'Arial', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 100px;
+    font-weight:normal;
     word-spacing: 2px;
     letter-spacing: 1px;
     text-align: center;
@@ -190,19 +192,32 @@ h3{
     background-color:#103e62;
     color: #f8f9fa;
     height: 600px;
-    padding: 30px;
+    padding: 20px 30px;
     margin-top: 10px;
     display: flex ;
     flex-direction: column;
     justify-content: center;
 }
 
+.frota h2{
+    margin-bottom: 30px;
+    text-align:start;
+    text-transform: uppercase;
+    font-weight: 100;
+    width: fit-content;
+}
 .carousel-item > img{
     vertical-align: middle;
     border-style: none;
     /* Tornando fixo o tamanho das imagens do carroussel */
     height: 300px !important;
     width: 600px !important;
+    object-fit: cover;
+}
+
+.carousel-item p{
+    width: 600px;
+    height: 50px;
 }
 
 .carousel-indicators {
@@ -236,25 +251,40 @@ h3{
     opacity: .5;
 }
 /* ----TESTIMONIALS SECTION---- */  
-h2{
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-weight: 100;
-    width: fit-content;
-    margin: 0 auto;
-    margin-bottom: 50px;
+
+
+.testimonials-carrossel{
+    height: 700px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #8ab4d4;
 }
 
 h2 span{
     font-weight: 700;
 }
 
-.testimonials-carrossel{
-    height: 650px;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color: #8ab4d4;
+.testimonials-carrossel h2{
+    text-transform: uppercase;
+    font-weight: 100;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
+.swiper-button-next, .swiper-button-prev {
+    position: unset;
+    align-self: center;
+}
+.testimonials-carrossel h2{
+    width: 100%;
+}
+
+.div-bottons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .swiper {
     width: 80vw;
@@ -264,7 +294,7 @@ h2 span{
 
 .swiper-wrapper {
     width: 100%;
-    height: 470px !important ;
+    height: 440px;
     z-index: 1;
     display: flex;
 }
@@ -301,7 +331,6 @@ h2 span{
     line-height: 1.5;
     color: #333;
     margin-top: 10px;
-    margin-bottom: 0;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -474,42 +503,6 @@ footer p{
     height: auto;
     border-radius: 10px;
 }
-
-.app-section {
-    background-color: #f5f5f5;
-    padding: 2em 1em;
-    text-align: center;
-  }
-  .mockup-container {
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .mockup img {
-    max-width: 75%;
-    border-radius: 10px;
-    max-height: 500px;
-    margin-left: 85%;
-  }
-  .mockup-content {
-    margin-left: 30%;
-    flex: 4;
-    padding: 0 1em;
-    text-align: center;
-  }
-  .content h2 {
-    color: #2c5f2d;
-  }
-  .content p {
-    color: #555;
-    font-size: 1.1em;
-    line-height: 1.5;
-  }
-  .store-buttons a img {
-    max-height: 40px;
-    margin-right: 10px;
-  }
 
 /* Responsividade */
 @media (max-width: 768px) {
