@@ -1,61 +1,298 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* ----------FOOTER--------------- */
-footer{
-    background-color: #333;
-    font-size: 80%;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 2.4em;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* ----NAVBAR SECTION---- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* ----TEAM SECTION---- */
+
+.team-section {
     padding: 40px 0;
+    text-align: center;
+    background-color: #e9ecef; /* Fundo muito claro */
 }
 
-.footer-top{
-    display: flex;
-    justify-content: space-around;
+.team-section h2{
+    padding-bottom: 20px;
 }
 
-.footer-nav ul,
-.social-nav ul{
+.team-members {
     display: flex;
-    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    max-width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333; /* Cinza escuro */
+}
+
+/* ----PARTNERS SECTION---- */
+
+.partners-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f8f9fa; /* Fundo claro */
+}
+
+.partners-section h2{
+    padding-bottom: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.footer-nav li a:visited,
-.footer-nav li a:link,
+.partners-logos img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.partners-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* ----SITEMAP SECTION---- */
+
+.sitemap-section {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Fundo claro */
+}
+
+.sitemap-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Cinza escuro */
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sitemap-list li {
+    margin: 5px 15px;
+    text-align: center;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #007bff; /* Azul */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sitemap-list a:hover {
+    color: #0056b3; /* Azul mais escuro */
+}
+
+/* ----FOOTER SECTION---- */ 
+
+footer {
+    background-color: #333;
+    font-size: 80%;
+    padding: 20px 0; /* Reduzi o padding geral */
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 30px;
+}
+
+/* Estilo para o Mapa do Site no Footer */
+.footer-sitemap {
+    flex: 1 1 60%;
+    color: #fff;
+    text-align: center; /* Centraliza o título */
+}
+
+.footer-sitemap h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center; /* Centraliza os links */
+}
+
+.sitemap-list li {
+    text-align: center;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sitemap-list a:hover {
+    color: #fff;
+}
+
+/* Redes Sociais */
+.social-nav {
+    flex: 1 1 30%; /* Ajuste para trazer os ícones mais à esquerda */
+    text-align: center; /* Alinha os ícones */
+}
+
+.social-nav ul {
+    display: flex;
+    justify-content: flex-start; /* Move os ícones mais à esquerda */
+    list-style-type: none;
+    gap: 100px;
+    padding-bottom: 20px;
+}
+
 .social-nav li a:visited,
-.social-nav li a:link{
+.social-nav li a:link {
     text-decoration: none;
     color: #888;
 }
 
-.logo-twitter:hover{
+.logo-twitter:hover {
     color: #00aced;
 }
 
-.logo-instagram:hover{
-    color: #517fa4;
+.logo-instagram:hover {
+    color: rgb(217, 50, 117);
 }
 
-.logo-facebook:hover{
+.logo-facebook:hover {
     color: #3b5998;
 }
 
-.logo-youtube:hover{
+.logo-youtube:hover {
     color: #FF0000;
 }
 
 .logo-youtube,
 .logo-facebook,
 .logo-instagram,
-.logo-twitter{
+.logo-twitter {
     transition: color 0.2s;
+    font-size: 30px;
 }
 
-footer p{
+/* Texto do rodapé */
+.footer-bottom {
+    padding: 10px 0; /* Reduzido para economizar espaço */
+    margin-top: 20px;
+}
+
+footer p {
     color: #888;
     text-align: center;
-    margin-top: 20px;
+    margin: 0;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul,
+    .social-nav ul {
+        justify-content: center;
+    }
+
+    .sitemap-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsividade para o menu */
+@media only screen and (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+    }
+
+    .navbar-nav.show {
+        display: flex;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 20px;
+    }
 }

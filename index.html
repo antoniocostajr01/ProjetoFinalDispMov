@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- Ligação com as pastas de CSS -->
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
 
 </head>
 <body>
@@ -29,16 +29,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Depoimentos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#frota">Frota</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map">Pontos de Recarga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#app">Baixe Nosso App</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    
     <section id="home" class="home-section text-center text-light">
         <div class="container">
             <h1>Bem-vindo à EcoDrive</h1>
@@ -46,7 +51,7 @@
         </div>
     </section>
 
-    <section class="section-beneficios">   
+    <section class="section-beneficios" id="beneficios">   
         <div class="beneficios-box">
             <div class="beneficio">
                 <div class="contorno-icone-benef bnf1"></div>
@@ -100,7 +105,7 @@
         </div>
     </section>
 
-    <section class="frota">
+    <section class="frota" id="frota">
         <h2>Conheça nossa frota</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -113,32 +118,32 @@
                 </ol>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                        <img class="" src="/vendors/img/teste2.png" alt="Primeiro Slide">
+                        <img class="" src="vendors/img/teste2.png" alt="Primeiro Slide">
                         <h3>BYD Dolphin</h3>
                         <p>Motor e Potência: Opções de motor de 70 kW (94 cv) e 130 kW (174 cv) para diferentes versões, com torque em torno de 180 Nm.</p>
                 </div>
                 <div class="carousel-item">
-                        <img class="" src="/vendors/img/car3.png" alt="Segundo Slide">
+                        <img class="" src="vendors/img/car3.png" alt="Segundo Slide">
                         <h3>Chevrolet Bolt EV</h3>
                         <p>Motor e Potência: Motor de 150 kW (200 cv) com torque de 360 Nm.</p>
                 </div>
                 <div class="carousel-item">
-                        <img class="" src="/vendors/img/car4.png" alt="Terceiro Slide">
+                        <img class="" src="vendors/img/car4.png" alt="Terceiro Slide">
                         <h3>JAC e-JS1</h3>
                         <p>Motor e Potência: Equipado com motor de 30 kW (40 cv) e torque de 150 Nm.</p>
                 </div>
                 <div class="carousel-item">
-                        <img class="" src="/vendors/img/car6.png" alt="Quarto Slide">
+                        <img class="" src="vendors/img/car6.png" alt="Quarto Slide">
                         <h3>Peugeot e-208 GT</h3>
                         <p>Motor e Potência: Motor de 100 kW (136 cv) e 260 Nm de torque.</p>
                 </div>
                 <div class="carousel-item">
-                        <img class="" src="/vendors/img/car11 (1).png" alt="Quinto Slide">
+                        <img class="" src="vendors/img/car11 (1).png" alt="Quinto Slide">
                         <h3>GWM Ora 3</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="carousel-item">
-                    <img class="" src="/vendors/img/car12 (1).png" alt="Quinto Slide">
+                    <img class="" src="vendors/img/car12 (1).png" alt="Quinto Slide">
                     <h3>Sexto carro</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -155,7 +160,7 @@
             </div>
     </section>
     
-    <section class="testimonials-carrossel">
+    <section class="testimonials-carrossel" id="depoimentos">
         <div><h2><span>Depoimentos</span> de <span>clientes</span></h2></div>
         <div class="div-bottons">
             <div class="swiper-button-prev"></div>      
@@ -213,24 +218,50 @@
     <section id="map" class="map-section">
         <div class="container">
             <h2>Mapa com pontos de recarga</h2>
-            <p>Conheça os principais pontos onde você pode recarregar o seu carro! </p>
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8706459047475!2d-122.08385178469285!3d37.38605197983456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b7ef1cd3b7%3A0x799ce349efecdd9d!2sGoogleplex!5e0!3m2!1sen!2sus!4v1618339160194!5m2!1sen!2sus" 
-                    width="75%" 
-                    height="500" 
-                    style="border:5;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
+            <p>Conheça os principais pontos onde você pode recarregar o seu carro!</p>
+            <div class="map-content">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/d/embed?mid=1Rr85E8kNmZ7yg-sgssMALewVZYAzyk4&ehbc=2E312F&noprof=1" 
+                        width="100%" 
+                        height="500" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="map-info">
+                    <ul>
+                        <li>
+                            <h3>Shopping Total</h3>
+                            <p>Av. Cristóvão Colombo, 545 - Floresta, Porto Alegre - RS</p>
+                        </li>
+                        <li>
+                            <h3>Shopping Praia de Belas</h3>
+                            <p>Av. Praia de Belas, 1181 - Praia de Belas, Porto Alegre - RS</p>
+                        </li>
+                        <li>
+                            <h3>Shopping Rua da Praia</h3>
+                            <p>Rua dos Andradas, 1001 - Centro Histórico, Porto Alegre - RS</p>
+                        </li>
+                        <li>
+                            <h3>Mercado Público</h3>
+                            <p>Largo Jorn. Glênio Péres, 1 - Centro Histórico, Porto Alegre - RS</p>
+                        </li>
+                        <li>
+                            <h3>Usina do Gasômetro</h3>
+                            <p>Cais do Porto - Largo do Trabalho, 46 - Centro Histórico, Porto Alegre - RS</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
+    </section>    
     
     <section id="newsletter" class="newsletter-section bg-light">
         <div class="container d-flex align-items-center">
             <div class="newsletter-image">
-                <img src="/vendors/img/newsletterfoto.jpg" alt="Newsletter">
+                <img src="vendors/img/newsletterfoto.jpg" alt="Newsletter">
             </div>
             <div class="newsletter-content">
                 <h2>Newsletter</h2>
@@ -284,7 +315,7 @@
                 </form>
             </div>
             <div class="contact-image">
-                <img src="/vendors/img/FaleConosco.jpg" alt="Fale Conosco">
+                <img src="vendors/img/FaleConosco.jpg" alt="Fale Conosco">
             </div>
         </div>
     </section>
@@ -366,43 +397,53 @@
             </div>
         </div>
     </section>
+
+    <section class="app-section" id="app">
+        <div class="mockup-container">
+            
+            <div class="mockup">
+                <img src="vendors/img/mockup.jpg" alt="Mockup do aplicativo EcoDrive">
+            </div>
+        
+            <div class="mockup-content">
+                <h2>Baixe nosso aplicativo e ajude a preservar o meio ambiente!</h2>
+                <p>
+                    Utilize o aplicativo da EcoDrive para alugar e comprar carros elétricos de maneira rápida e sustentável. Com cada uso, você contribui para um mundo mais verde. Além disso, acumula pontos que podem ser trocados por serviços.
+                </p>
     
-    <section id="sitemap" class="sitemap-section bg-light">
-        <div class="container">
-            <h2>Mapa do Site</h2>
-            <ul class="sitemap-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="/sobre.html">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Fale Conosco</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#map">Mapa com Pontos de Recarga</a></li>
-                <li><a href="#map">Baixe nosso app</a></li>
-            </ul>
+                <div class="store-buttons">
+                    <a href="https://www.apple.com/br/app-store/" target="_blank">
+                        <img src="vendors/img/appstore.jpg" alt="Disponível na App Store">
+                    </a>
+                    <a href="https://play.google.com/store/games?device=windows" target="_blank">
+                        <img src="vendors/img/googlestore.jpg" alt="Disponível no Google Play">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     
     <footer>
         <div class="footer-top">
-            <nav class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#">Depoimentos</a>
-                    </li>
-                    <li>
-                        <a href="#">Cardápio</a>
-                    </li>
-                    <li>
-                        <a href="#">Informações</a>
-                    </li>
-                    <li>
-                        <a href="#">Novidades</a>
-                    </li>
+            <!-- Mapa do Site -->
+            <nav class="footer-sitemap">
+                <h2>Mapa do Site</h2>
+                <ul class="sitemap-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#frota">Frota</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#map">Pontos de Recarga</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#app">Baixe Nosso App</a></li>
                 </ul>
             </nav>
+    
+            <!-- Redes Sociais -->
             <nav class="social-nav">
                 <ul>
                     <li>
@@ -429,12 +470,10 @@
             </nav>
         </div>
         <div class="footer-bottom">
-            <p>
-                &copy; EcoDrive
-                - Todos os direitos reservados.
-            </p>
+            <p>&copy; EcoDrive - Todos os direitos reservados.</p>
         </div>
     </footer>
+    
 
     <!-- Importação Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

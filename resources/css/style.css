@@ -11,7 +11,19 @@ body{
     background-color: #f8f9fa !important;
 }
 
+/* ----NAVBAR SECTION---- */  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
 
+/* ----BANNER SECTION---- */  
 
 .container {
     width: 100%;
@@ -26,16 +38,7 @@ body{
     padding: 0;
     padding: 60px 0;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.navbar-nav {
-    display: flex;
-    gap: 15px;
-}
+
 .home-section {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5 ),rgba(0, 0, 0, 0.5 )),
@@ -52,11 +55,7 @@ body{
     width: 60px;
 }
 
-/*
------------------------------------
----SESSÃO DOS BENEFICIOS-- 
----------------------------------
- */
+/* ----BENEFICIOS SECTION---- */  
 
 .section-beneficios{
     background-color:#3b5998;
@@ -113,6 +112,8 @@ body{
 .titulo-beneficio{
     margin-bottom: 15px;
 }
+
+/* ----SERVICOS SECTION---- */
 
 .services-section{
     padding: 20px 20px;
@@ -178,6 +179,7 @@ h3{
 }
 
 
+/* ----FROTA SECTION---- */
 
 .carousel {
     position: relative;
@@ -250,8 +252,8 @@ h3{
     text-align: center;
     opacity: .5;
 }
-/* ----TESTIMONIALS SECTION---- */  
 
+/* ----DEPOIMENTOS SECTION---- */  
 
 .testimonials-carrossel{
     height: 700px;
@@ -338,66 +340,77 @@ h2 span{
 }
 
 
-footer{
-    background-color: #333;
-    font-size: 80%;
-    padding: 40px 0;
-}
-
-.footer-top{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-nav ul,
-.social-nav ul{
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-}
-
-.footer-nav li a:visited,
-.footer-nav li a:link,
-.social-nav li a:visited,
-.social-nav li a:link{
-    text-decoration: none;
-    color: #888;
-}
-
-.logo-twitter:hover{
-    color: #00aced;
-}
-
-.logo-instagram:hover{
-    color: rgb(217, 50, 117)
-}
-
-.logo-facebook:hover{
-    color: #3b5998;
-}
-
-.logo-youtube:hover{
-    color: #FF0000;
-}
-
-.logo-youtube,
-.logo-facebook,
-.logo-instagram,
-.logo-twitter{
-    transition: color 0.2s;
-    font-size: 30px;
-}
-
-footer p{
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-}
+/* ----PONTOS DE RECARGA SECTION---- */ 
 
 .map-section {
     padding: 60px 20px;
+    background-color: #f8f9fa;
     text-align: center;
 }
+
+.map-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    
+}
+
+.map-section p {
+    margin-bottom: 40px;
+    color: #495057;
+}
+
+.map-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+
+.map-container {
+    flex: 1 2 45%; 
+    min-width: 300px; 
+    max-width: 650px; 
+    height: 450px;
+}
+
+.map-info {
+    flex: 1 1 50%;
+    min-width: 300px;
+    text-align: left;
+}
+
+.map-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.map-info li {
+    margin-bottom: 10px;
+}
+
+.map-info h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.map-info p {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ----NEWSLETTER SECTION---- */ 
 
 .newsletter-section {
     padding: 60px 20px;
@@ -406,15 +419,9 @@ footer p{
     align-items: center;
 }
 
-.map-section p {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
 .newsletter-image {
     flex: 2.5;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .newsletter-content {
@@ -438,6 +445,9 @@ footer p{
     background-color: #1abc9c;
     border: none;
 }
+
+
+/* ----CONTATO SECTION---- */ 
 
 .contact-form .form-control {
     width: 140%; 
@@ -504,6 +514,244 @@ footer p{
     border-radius: 10px;
 }
 
+/* ----FAQ SECTION---- */
+
+/* Estilo geral da seção */
+.faq-section {
+    padding: 50px 15px;
+    background-color: #f8f9fa; /* cor de fundo clara */
+}
+
+/* Título da seção */
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #343a40; /* cor do texto principal */
+    font-weight: bold;
+}
+
+/* Estilo do container de cards */
+.accordion .card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra leve */
+    overflow: hidden;
+    background: #ffffff; /* fundo branco para os cards */
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion .card:hover {
+    transform: translateY(-5px); /* elevação ao passar o mouse */
+}
+
+/* Cabeçalho dos cards */
+.accordion .card-header {
+    background-color: #007bff; /* azul para o cabeçalho */
+    color: #ffffff; /* texto branco */
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #0056b3; /* separador fino */
+}
+
+.accordion .card-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Botão de alternância */
+.accordion .btn-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: block;
+    text-align: left;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+.accordion .btn-link:hover {
+    color: #d9ecff; /* tom mais claro ao passar o mouse */
+}
+
+/* Conteúdo do card */
+.accordion .collapse {
+    border-top: 1px solid #f1f1f1; /* separador sutil */
+    background-color: #f8f9fa;
+}
+
+.accordion .card-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #495057; /* cinza escuro para leitura */
+    line-height: 1.6;
+}
+
+/* Transições para a abertura/fechamento */
+.accordion .collapse.show {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----APP SECTION---- */  
+
+.app-section {
+    background-color: #f5f5f5;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .mockup-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mockup img {
+    max-width: 75%;
+    border-radius: 10px;
+    max-height: 500px;
+    margin-left: 85%;
+  }
+  .mockup-content {
+    margin-left: 30%;
+    flex: 4;
+    padding: 0 1em;
+    text-align: center;
+  }
+  .content h2 {
+    color: #2c5f2d;
+  }
+  .content p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+  .store-buttons a img {
+    max-height: 40px;
+    margin-right: 10px;
+  }
+
+/* ----FOOTER SECTION---- */ 
+
+footer {
+    background-color: #333;
+    font-size: 80%;
+    padding: 20px 0; /* Reduzi o padding geral */
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 30px;
+}
+
+/* Estilo para o Mapa do Site no Footer */
+.footer-sitemap {
+    flex: 1 1 60%;
+    color: #fff;
+    text-align: center; /* Centraliza o título */
+}
+
+.footer-sitemap h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center; /* Centraliza os links */
+}
+
+.sitemap-list li {
+    text-align: center;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sitemap-list a:hover {
+    color: #fff;
+}
+
+/* Redes Sociais */
+.social-nav {
+    flex: 1 1 30%; /* Ajuste para trazer os ícones mais à esquerda */
+    text-align: center; /* Alinha os ícones */
+}
+
+.social-nav ul {
+    display: flex;
+    justify-content: flex-start; /* Move os ícones mais à esquerda */
+    list-style-type: none;
+    gap: 100px;
+    padding-bottom: 20px;
+}
+
+.social-nav li a:visited,
+.social-nav li a:link {
+    text-decoration: none;
+    color: #888;
+}
+
+.logo-twitter:hover {
+    color: #00aced;
+}
+
+.logo-instagram:hover {
+    color: rgb(217, 50, 117);
+}
+
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+.logo-youtube:hover {
+    color: #FF0000;
+}
+
+.logo-youtube,
+.logo-facebook,
+.logo-instagram,
+.logo-twitter {
+    transition: color 0.2s;
+    font-size: 30px;
+}
+
+/* Texto do rodapé */
+.footer-bottom {
+    padding: 10px 0; /* Reduzido para economizar espaço */
+    margin-top: 20px;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin: 0;
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .contact-section .container {
@@ -517,38 +765,6 @@ footer p{
         padding: 10px;
     }
 }
-
-
-.sitemap-section {
-    padding: 40px 0;
-    background-color: #f8f9fa;
-}
-
-.sitemap-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.sitemap-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sitemap-list li {
-    margin: 5px 15px;
-    text-align: center;
-}
-
-.sitemap-list a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 16px;
-}
-
 
 /* Garantindo boa visualização em telas pequenas */
 .sitemap-list a:active {
