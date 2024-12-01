@@ -1,0 +1,353 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Benefícios Introdução */
+.beneficios-intro {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.beneficios-intro h1 {
+    font-size: 2.5em;
+    color: #103e62;
+    margin-bottom: 20px;
+}
+
+.beneficios-intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Detalhes dos Benefícios */
+.beneficios-detalhes {
+    padding: 40px 20px;
+}
+
+.beneficios-detalhes h2 {
+    font-size: 2em;
+    color: #103e62;
+}
+
+.beneficios-detalhes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios-detalhes ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Ajuste para as Imagens */
+.beneficios-detalhes img,
+.como-instalar img,
+.galeria .swiper-slide img {
+    width: 600px !important; /* Largura fixa */
+    height: 300px !important; /* Altura fixa */
+    object-fit: cover; /* Garante o preenchimento proporcional */
+    border-radius: 10px; /* Bordas arredondadas para melhor estética */
+}
+
+/* Como Instalar */
+.como-instalar {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+}
+
+.como-instalar h2 {
+    font-size: 2em;
+    color: #103e62;
+}
+
+.como-instalar h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #103e62;
+}
+
+.como-instalar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.como-instalar ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Galeria */
+.galeria {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2em;
+    color: #103e62;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.duvidas-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    border-top: 2px solid #e9ecef;
+}
+
+.duvidas-section h2 {
+    font-size: 2.5em;
+    color: #103e62;
+    margin-bottom: 20px;
+}
+
+.duvidas-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.form-duvidas .form-group {
+    margin-bottom: 20px;
+}
+
+.form-duvidas .form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-duvidas .btn {
+    background-color: #1abc9c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-duvidas .btn:hover {
+    background-color: #16a085;
+    cursor: pointer;
+}
+
+.duvidas-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ----FOOTER SECTION---- */ 
+
+footer {
+    background-color: #333;
+    font-size: 80%;
+    padding: 20px 0; /* Reduzi o padding geral */
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 30px;
+}
+
+/* Estilo para o Mapa do Site no Footer */
+.footer-sitemap {
+    flex: 1 1 60%;
+    color: #fff;
+    text-align: center; /* Centraliza o título */
+}
+
+.footer-sitemap h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center; /* Centraliza os links */
+}
+
+.sitemap-list li {
+    text-align: center;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sitemap-list a:hover {
+    color: #fff;
+}
+
+/* Redes Sociais */
+.social-nav {
+    flex: 1 1 30%; /* Ajuste para trazer os ícones mais à esquerda */
+    text-align: center; /* Alinha os ícones */
+}
+
+.social-nav ul {
+    display: flex;
+    justify-content: flex-start; /* Move os ícones mais à esquerda */
+    list-style-type: none;
+    gap: 100px;
+    padding-bottom: 20px;
+}
+
+.social-nav li a:visited,
+.social-nav li a:link {
+    text-decoration: none;
+    color: #888;
+}
+
+.logo-twitter:hover {
+    color: #00aced;
+}
+
+.logo-instagram:hover {
+    color: rgb(217, 50, 117);
+}
+
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+.logo-youtube:hover {
+    color: #FF0000;
+}
+
+.logo-youtube,
+.logo-facebook,
+.logo-instagram,
+.logo-twitter {
+    transition: color 0.2s;
+    font-size: 30px;
+}
+
+/* Texto do rodapé */
+.footer-bottom {
+    padding: 10px 0; /* Reduzido para economizar espaço */
+    margin-top: 20px;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-section .container {
+        flex-direction: column-reverse; /* Altera a ordem para que o formulário venha antes da imagem */
+    }
+
+    .contact-content,
+    .contact-image {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Garantindo boa visualização em telas pequenas */
+.sitemap-list a:active {
+    color: #0056b3;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-section, .about-section, .services-section, .gallery-section, .testimonials-section, .faq-section, .contact-section {
+        padding: 40px 15px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .lightbox-content {
+        width: 90%;
+    }
+    #caption {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navbar-nav {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lightbox-content {
+        width: 85%;
+    }
+    #caption {
+        font-size: 17px;
+    }  
+    .container {
+        padding: 0 15px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+}
+    @media only screen and (min-width: 1200px) {
+    .navbar-nav {
+        justify-content: space-around;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .lightbox-content {
+        width: 80%;
+    }
+    #caption {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletter-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .newsletter-image, .newsletter-content {
+        max-width: 100%;
+    }
+}
