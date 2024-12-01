@@ -15,3 +15,6 @@ https://drive.google.com/drive/folders/1Sj_duam68_fP6jUebUhNc-L0Lkuyaw8H?usp=dri
 
 SwiperJS
 https://swiperjs.com/
+
+Paleta de cores
+https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8

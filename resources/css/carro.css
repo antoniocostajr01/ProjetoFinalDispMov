@@ -1,0 +1,42 @@
+.carousel-item img{
+     vertical-align: middle;
+     border-style: none;
+     /* Tornando fixo o tamanho das imagens do carroussel */
+     height: 300px;
+     width: 75% !important;
+     object-fit: cover;
+}
+
+.section-video{
+     background-color: #eee;
+     display: flex;
+     flex-direction: row;
+     margin-top: 40px;
+     flex-wrap: wrap;
+}
+
+.box-apresentation{
+     display: flex;
+     align-items: center;
+}
+
+.box-apresentation video{
+     width: 50%;
+     object-fit: cover;
+}
+
+
+.text-video{
+     padding: 15px;
+}
+
+.text-video h3{
+     text-transform: none;
+     font-size: 40px;
+     text-align:left;
+}
+
+.text-video p{
+     font-size: 20px;
+     text-align: left;
+}

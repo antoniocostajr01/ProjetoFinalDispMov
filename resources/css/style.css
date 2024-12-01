@@ -23,6 +23,10 @@ body{
     gap: 15px;
 }
 
+.bg-dark{
+    background-color: #03045E !important    ;
+}
+
 /* ----BANNER SECTION---- */  
 
 .container {
@@ -58,7 +62,7 @@ body{
 /* ----BENEFICIOS SECTION---- */  
 
 .section-beneficios{
-    background-color:#3b5998;
+    background-color:#1E6091;
     padding: 15px 0;
     color: #fff;
 }
@@ -77,7 +81,7 @@ body{
 }
 
 .contorno-icone-benef{
-    background-color: #eaeaea;
+    background-color: #184E77;
     margin: 10px 10px;
     display: flex;
     min-width: 110px;
@@ -86,19 +90,19 @@ body{
 }
 .bnf1{
     background-image: url(/vendors/img/carregamento.png);
-    background-size: 50px;
+    background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bnf2{
-    background-image: url(/vendors/img/assistencia.jpg);
-    background-size: cover;
+    background-image: url(/vendors/img/assistencia.png);
+    background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bnf3{
     background-image: url(/vendors/img/garantia.png);
-    background-size: cover;
+    background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -208,12 +212,12 @@ h3{
     font-weight: 100;
     width: fit-content;
 }
-.carousel-item > img{
+.carousel-item img{
     vertical-align: middle;
     border-style: none;
     /* Tornando fixo o tamanho das imagens do carroussel */
-    height: 300px !important;
-    width: 600px !important;
+    height: 300px;
+    width: 600px;
     object-fit: cover;
 }
 
@@ -256,7 +260,7 @@ h3{
 /* ----DEPOIMENTOS SECTION---- */  
 
 .testimonials-carrossel{
-    height: 700px;
+    height: 600px;
     padding: 20px;
     margin-bottom: 10px;
     background-color: #8ab4d4;
@@ -271,7 +275,7 @@ h2 span{
     font-weight: 100;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 .swiper-button-next, .swiper-button-prev {
@@ -290,7 +294,7 @@ h2 span{
 
 .swiper {
     width: 80vw;
-    height: 550px;
+    height: 480px;
     margin-top: 20px;
 }
 
