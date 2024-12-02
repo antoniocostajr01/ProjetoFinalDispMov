@@ -16,14 +16,13 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
      <!-- Ligação com as pastas de CSS -->
-     <link rel="stylesheet" href="resources/css/style.css">
      <link rel="stylesheet" href="resources/css/carro.css">
-
-
+     
+     
 </head>
 <body>
      <header>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#">EcoDrive</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                <span class="navbar-toggler-icon"></span>
@@ -44,40 +43,75 @@
                </ul>
           </div>
      </nav>
-     </header>
+</header>
 
-     <section class="section-pictures">
-          <h1>Chevrolet Bolt EV</h1>
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-               <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img class="d-block w-100" src="vendors/img/bolt-back.jpg" alt="Primeiro Slide">
+<section class="car-title">
+     <div class="box-car-name">
+     <h1>Chevrolet Bolt EV</h1>
+     </div>
+     <a href="#">     
+          Solicitar Orçamento
+          <ion-icon name="logo-whatsapp"></ion-icon>
+     </a>
+</section>
+
+<section class="section-pictures">
+          <div class="div-bottons">
+               <div class="swiper-button-next"></div>
+               <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <img src="vendors/img/bolt-front.jpeg" />
                     </div>
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="vendors/img/bolt-front.jpeg" alt="Segundo Slide">
+                    <div class="swiper-slide">
+                    <img src="vendors/img/bolt-int.jpg" />
                     </div>
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="vendors/img/bolt-int.jpg" alt="Terceiro Slide">
+                    <div class="swiper-slide">
+                    <img src="vendors/img/bolt-back.jpg" />
                     </div>
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="vendors/img/bolt-img.png" alt="Terceiro Slide">
+                    <div class="swiper-slide">
+                    <img src="vendors/img/bolt-img.png" />
                     </div>
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="vendors/img/bolt-img2.png" alt="Terceiro Slide">
+                    <div class="swiper-slide">
+                    <img src="vendors/img/bolt-img2.png" />
                     </div>
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="vendors/img/bolt-img3.png" alt="Terceiro Slide">
+                    <div class="swiper-slide">
+                    <img src="vendors/img/bolt-img3.png" />
                     </div>
                </div>
-               <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-               </a>
-               <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-               </a>
+               </div>
+               <div class="swiper-button-prev"></div>
           </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+               <div class="swiper-slide">
+               <img src="vendors/img/bolt-front.jpeg" />
+               </div>
+               <div class="swiper-slide">
+               <img src="vendors/img/bolt-int.jpg" />
+               </div>
+               <div class="swiper-slide">
+               <img src="vendors/img/bolt-back.jpg" />
+               </div>
+               <div class="swiper-slide">
+               <img src="vendors/img/bolt-img.png" />
+               </div>
+               <div class="swiper-slide">
+               <img src="vendors/img/bolt-img2.png" />
+               </div>
+               <div class="swiper-slide">
+               <img src="vendors/img/bolt-img3.png" />
+               </div>
+          </div>
+          </div>
+     </section>
+
+     <section class="info-section">
+          <h2>Conheça seu futuro</h2>
+          <p>Motor e Potência: Motor de 150 kW (200 cv) com torque de 360 Nm.</p>
+          <p>Bateria e Autonomia: Bateria de 66 kWh, com uma autonomia de até 416 km no ciclo EPA, ideal para trajetos longos.</p>
+          <p>Desempenho e Carregamento: Acelera de 0 a 100 km/h em cerca de 6,5 segundos, com recarga rápida que permite até 160 km em 30 minutos usando carregadores rápidos.</p>
+          <p>Tecnologia e Conforto: Sistema de infotainment com tela de 10,2 polegadas, suporte para Apple CarPlay e Android Auto, além de várias assistências de condução para uma experiência mais segura e confortável.</p>
      </section>
 
      <section class="section-video">
@@ -179,7 +213,8 @@
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      
      <!-- Arquivo js -->
-     <script src="resources/js/script.js"></script>
+     <script src="resources/js/carScript.js"></script>
+
 
 </body>
 
