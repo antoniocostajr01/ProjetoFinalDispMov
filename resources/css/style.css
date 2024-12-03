@@ -865,7 +865,6 @@ footer p {
 
 }
 
-/
 @media only screen and (max-width: 400px) {
     .navbar-nav {
         flex-direction: row;
