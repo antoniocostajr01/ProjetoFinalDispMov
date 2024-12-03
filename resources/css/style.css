@@ -84,8 +84,8 @@ body{
     background-color: #184E77;
     margin: 10px 10px;
     display: flex;
-    min-width: 110px;
-    min-height: 110px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
 }
 .bnf1{
@@ -114,14 +114,16 @@ body{
 }
 
 .titulo-beneficio{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 /* ----SERVICOS SECTION---- */
 
 .services-section{
     padding: 20px 20px;
-    height: 500px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pre-infos h2{
@@ -197,7 +199,7 @@ h3{
 .frota {
     background-color:#103e62;
     color: #f8f9fa;
-    height: 600px;
+    min-height: 600px;
     padding: 20px 30px;
     margin-top: 10px;
     display: flex ;
@@ -222,7 +224,7 @@ h3{
 }
 
 .carousel-item p{
-    width: 600px;
+    width: 300px;
     height: 50px;
 }
 
@@ -756,25 +758,91 @@ footer p {
 }
 
 
-/* Responsividade */
-@media (max-width: 768px) {
+@media only screen and (max-width: 1515px){
+    .section-beneficios{
+        font-size: 13px;
+    }
+    .contorno-icone-benef{
+        background-color: #184E77;
+        /* margin: 10px 10px; */
+        width: 50px;
+        height: 50px;
+        background-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1150px){
+    .section-beneficios{
+        font-size: 30px;
+    }
+
+    .caixa-texto p{
+        width: 740px;
+    }
+
+    .contorno-icone-benef{
+        /* margin: 10px 10px; */
+        width: 120px;
+        height: 120px;
+        background-size: 60px;
+    }
+
+    .text-benef{
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 880px){
+    .frota{
+        height: 800px;
+        width: 400px;
+    }
+    .carousel-item img{
+        height: auto;
+        height: auto;
+    }
     .contact-section .container {
         flex-direction: column-reverse; /* Altera a ordem para que o formulário venha antes da imagem */
     }
 
+    .contact-section .container form,
+    .contact-section .container input,
+    .contact-section .container select,
+    .contact-section .container textarea{
+        width: 300px;
+    }
+
+    .faq-section button{
+        width: 300px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
     .contact-content,
     .contact-image {
         flex: none;
         width: 100%;
         padding: 10px;
     }
+
+    .testimonials-carrossel{
+        height: 700px;
+    }
+
 }
 
-/* Garantindo boa visualização em telas pequenas */
-.sitemap-list a:active {
-    color: #0056b3;
-}
-
+/* 
 
 @media only screen and (max-width: 400px) {
     .navbar-nav {
@@ -787,9 +855,7 @@ footer p {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-    .lightbox-content {
-        width: 90%;
-    }
+
     #caption {
         font-size: 16px;
     }
@@ -842,4 +908,4 @@ footer p {
     .newsletter-image, .newsletter-content {
         max-width: 100%;
     }
-}
+} */
