@@ -117,8 +117,6 @@ body{
     margin-bottom: 5px;
 }
 
-/* ----SERVICOS SECTION---- */
-
 .services-section{
     padding: 20px 20px;
     min-height: 500px;
@@ -147,10 +145,6 @@ body{
     color: #103e62;
     /* transition: transform 0.3s ease, color 0.3s ease; Suaviza a transição para a cor e o movimento */
 }
-/* 
-.services-section ion-icon:hover {
-    color: #00aced;
-    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
 
 
 .box-info{
@@ -373,7 +367,6 @@ h2 span{
     gap: 50px;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 100px;
     margin-top: 20px;
 
 }
@@ -420,10 +413,11 @@ h2 span{
 /* ----NEWSLETTER SECTION---- */ 
 
 .newsletter-section {
-    padding: 60px 20px;
+    width: 100vw ;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
+    margin: 0;
 }
 
 .newsletter-image {
@@ -433,6 +427,8 @@ h2 span{
 
 .newsletter-content {
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .newsletter-content h2 {
@@ -529,6 +525,8 @@ h2 span{
     background-color: #f8f9fa; /* cor de fundo clara */
 }
 
+
+
 /* Título da seção */
 .faq-section h2 {
     text-align: center;
@@ -617,40 +615,49 @@ h2 span{
 .app-section {
     background-color: #f5f5f5;
     padding: 2em 1em;
-    text-align: center;
-  }
-  .mockup-container {
-    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.mockup-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-  .mockup img {
+    justify-content: center
+}
+
+.mockup{
+    display: flex;
+    justify-content: center;
+}
+
+.mockup img {
     max-width: 75%;
     border-radius: 10px;
     max-height: 500px;
-    margin-left: 85%;
-  }
-  .mockup-content {
-    margin-left: 30%;
-    flex: 4;
+}
+.mockup-content {
+    width: 500px;
     padding: 0 1em;
     text-align: center;
-  }
-  .content h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.content h2 {
     color: #2c5f2d;
-  }
-  .content p {
+}
+.content p {
     color: #555;
     font-size: 1.1em;
     line-height: 1.5;
-  }
-  .store-buttons a img {
+}
+.store-buttons a img {
     max-height: 40px;
     margin-right: 10px;
-  }
+}
 
-/* ----FOOTER SECTION---- */ 
+/* ----FOOTER SECTION---- */
 
 footer {
     background-color: #333;
@@ -710,7 +717,7 @@ footer {
 
 .social-nav ul {
     display: flex;
-    justify-content: center; /* Move os ícones mais à esquerda */
+    justify-content: center;
     list-style-type: none;
     gap: 60px;
     padding-bottom: 20px;
@@ -759,6 +766,7 @@ footer p {
 }
 
 
+
 @media only screen and (max-width: 1515px){
     .section-beneficios{
         font-size: 13px;
@@ -773,26 +781,81 @@ footer p {
 
 }
 
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 1200px){
     .section-beneficios{
         font-size: 30px;
     }
-
+    
     .caixa-texto p{
         width: 740px;
     }
-
+    
     .contorno-icone-benef{
         /* margin: 10px 10px; */
         width: 120px;
         height: 120px;
         background-size: 60px;
     }
-
+    
     .text-benef{
         margin-bottom: 40px;
     }
     
+    .services-section{
+        justify-content: center;
+    }
+    
+    .infos{
+        flex-basis: 770px;
+    }
+    .box-info:hover{
+        transform: none;
+        color: none;
+        box-shadow: none;
+    }
+
+    
+    .map-info ul {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .app-section {
+        background-color: #f5f5f5;
+        /* padding: 2em 1em; */
+        width:auto ;
+    }
+    .mockup-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .mockup img {
+        width: auto;
+        border-radius: 10px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .mockup-content {
+        margin-top: 30px;
+        padding: 0 1em;
+        text-align: center;
+        width: auto;
+    }
+    .content h2 {
+        color: #2c5f2d;
+    }
+    .content p {
+        color: #555;
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+    .store-buttons a img {
+        max-height: 40px;
+        margin-right: 10px;
+    }
 }
 
 
@@ -832,7 +895,7 @@ footer p {
     .contact-section .container input,
     .contact-section .container select,
     .contact-section .container textarea{
-        width: 300px;
+        width: 90vw;
     }
 
     

@@ -45,6 +45,11 @@ p {
     gap: 15px;
 }
 
+
+.bg-dark{
+    background-color: #03045E !important;
+}
+
 /* ----TEAM SECTION---- */
 
 .team-section {
@@ -207,9 +212,9 @@ footer {
 
 .social-nav ul {
     display: flex;
-    justify-content: flex-start; /* Move os ícones mais à esquerda */
+    justify-content: center;
     list-style-type: none;
-    gap: 100px;
+    gap: 60px;
     padding-bottom: 20px;
 }
 
@@ -254,6 +259,7 @@ footer p {
     text-align: center;
     margin: 0;
 }
+
 
 /* Responsividade */
 @media only screen and (max-width: 768px) {
