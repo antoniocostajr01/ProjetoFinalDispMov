@@ -143,7 +143,6 @@ body{
 .services-section ion-icon {
     font-size: 350%;
     color: #103e62;
-    /* transition: transform 0.3s ease, color 0.3s ease; Suaviza a transição para a cor e o movimento */
 }
 
 
@@ -213,7 +212,6 @@ h3{
 .carousel-item img{
     vertical-align: middle;
     border-style: none;
-    /* Tornando fixo o tamanho das imagens do carroussel */
     height: 300px;
     width: 600px;
     object-fit: cover;
@@ -232,14 +230,14 @@ h3{
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 100px !important; /*Distancia do indicador do slide em relação ao conteudo */
+    padding-top: 100px !important;
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
 }
 
 .carousel-control-next, .carousel-control-prev {
-    position: absolute !important; /*Mantendo os botões fixos */
+    position: absolute !important; 
     top: 0;
     bottom: 0;
     display: -ms-flexbox;
@@ -248,7 +246,7 @@ h3{
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 20px !important; /*Distancia dos botões do slide em relação ao conteudo */
+    width: 20px !important; 
     margin: 0px -60px !important;
     text-align: center;
     opacity: .5;
@@ -410,43 +408,84 @@ h2 span{
     border: 0;
 }
 
-/* ----NEWSLETTER SECTION---- */ 
+/* ----NEWSLETTER SECTION---- */
 
 .newsletter-section {
-    width: 100vw ;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.newsletter-section .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0;
-}
-
-.newsletter-image {
-    flex: 2.5;
-    text-align: center;  
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .newsletter-content {
     flex: 1;
-    display: flex;
-    flex-wrap: wrap;
+    text-align: left;
+    padding: 20px;
+    width: 100%; 
 }
 
 .newsletter-content h2 {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .newsletter-content p {
     margin-bottom: 20px;
+    font-size: 16px;
+}
 
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; 
 }
 
 .newsletter-form .form-campos {
-    margin-bottom: 15px;
+    width: 100%;
+}
+
+.newsletter-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .newsletter-form .btn-primary {
     background-color: #1abc9c;
     border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.newsletter-form .btn-primary:hover {
+    background-color: #16a085;
+}
+
+.newsletter-image {
+    flex: 2.5;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Garante largura total */
+}
+
+.newsletter-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 
@@ -519,45 +558,39 @@ h2 span{
 
 /* ----FAQ SECTION---- */
 
-/* Estilo geral da seção */
 .faq-section {
     padding: 50px 15px;
-    background-color: #f8f9fa; /* cor de fundo clara */
+    background-color: #f8f9fa;
 }
 
-
-
-/* Título da seção */
 .faq-section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #343a40; /* cor do texto principal */
+    color: #343a40; 
     font-weight: bold;
 }
 
-/* Estilo do container de cards */
 .accordion .card {
     border: none;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra leve */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
-    background: #ffffff; /* fundo branco para os cards */
+    background: #ffffff; 
     transition: transform 0.2s ease-in-out;
 }
 
 .accordion .card:hover {
-    transform: translateY(-5px); /* elevação ao passar o mouse */
+    transform: translateY(-5px); 
 }
 
-/* Cabeçalho dos cards */
 .accordion .card-header {
-    background-color: #007bff; /* azul para o cabeçalho */
-    color: #ffffff; /* texto branco */
+    background-color: #007bff; 
+    color: #ffffff; 
     padding: 15px 20px;
     cursor: pointer;
-    border-bottom: 1px solid #0056b3; /* separador fino */
+    border-bottom: 1px solid #0056b3; 
 }
 
 .accordion .card-header h2 {
@@ -566,7 +599,6 @@ h2 span{
     font-weight: bold;
 }
 
-/* Botão de alternância */
 .accordion .btn-link {
     color: #ffffff;
     text-decoration: none;
@@ -578,37 +610,21 @@ h2 span{
 }
 
 .accordion .btn-link:hover {
-    color: #d9ecff; /* tom mais claro ao passar o mouse */
+    color: #d9ecff; 
 }
 
-/* Conteúdo do card */
 .accordion .collapse {
-    border-top: 1px solid #f1f1f1; /* separador sutil */
+    border-top: 1px solid #f1f1f1;
     background-color: #f8f9fa;
 }
 
 .accordion .card-body {
     padding: 20px;
     font-size: 1rem;
-    color: #495057; /* cinza escuro para leitura */
+    color: #495057;
     line-height: 1.6;
 }
 
-/* Transições para a abertura/fechamento */
-.accordion .collapse.show {
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* ----APP SECTION---- */  
 
@@ -662,22 +678,23 @@ h2 span{
 footer {
     background-color: #333;
     font-size: 80%;
-    padding: 20px 0; /* Reduzi o padding geral */
+    padding: 20px 0;
 }
 
 .footer-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; /* Centraliza os itens verticalmente */
+    align-items: center;
     gap: 30px;
 }
 
 /* Estilo para o Mapa do Site no Footer */
+
 .footer-sitemap {
     flex: 1 1 60%;
     color: #fff;
-    text-align: center; /* Centraliza o título */
+    text-align: center; 
 }
 
 .footer-sitemap h2 {
@@ -691,7 +708,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
-    justify-content: center; /* Centraliza os links */
+    justify-content: center; 
 }
 
 .sitemap-list li {
@@ -709,10 +726,10 @@ footer {
     color: #fff;
 }
 
-/* Redes Sociais */
+/* Redes Sociais no footer*/
 .social-nav {
-    flex: 1 1 30%; /* Ajuste para trazer os ícones mais à esquerda */
-    text-align: center; /* Alinha os ícones */
+    flex: 1 1 30%; 
+    text-align: center; 
 }
 
 .social-nav ul {
@@ -753,9 +770,8 @@ footer {
     font-size: 30px;
 }
 
-/* Texto do rodapé */
 .footer-bottom {
-    padding: 10px 0; /* Reduzido para economizar espaço */
+    padding: 10px 0; 
     margin-top: 20px;
 }
 
@@ -773,7 +789,6 @@ footer p {
     }
     .contorno-icone-benef{
         background-color: #184E77;
-        /* margin: 10px 10px; */
         width: 50px;
         height: 50px;
         background-size: 30px;
@@ -791,7 +806,6 @@ footer p {
     }
     
     .contorno-icone-benef{
-        /* margin: 10px 10px; */
         width: 120px;
         height: 120px;
         background-size: 60px;
@@ -814,7 +828,6 @@ footer p {
         box-shadow: none;
     }
 
-    
     .map-info ul {
         text-align: center;
     }
@@ -823,7 +836,6 @@ footer p {
 @media only screen and (max-width: 950px){
     .app-section {
         background-color: #f5f5f5;
-        /* padding: 2em 1em; */
         width:auto ;
     }
     .mockup-container {
@@ -888,7 +900,7 @@ footer p {
 
 
     .contact-section .container {
-        flex-direction: column-reverse; /* Altera a ordem para que o formulário venha antes da imagem */
+        flex-direction: column-reverse;
     }
 
     .contact-section .container form,
@@ -909,7 +921,7 @@ footer p {
     }
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .section-beneficios{
         font-size: 15px;
@@ -984,4 +996,55 @@ footer p {
     }
 
 }
+
+@media (max-width: 768px) {
+    .newsletter-section .container {
+        flex-direction: column; 
+    }
+
+    .newsletter-content,
+    .newsletter-image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .newsletter-form {
+        gap: 10px; 
+    }
+}
+
+/* ----RESPONSIVIDADE ---- */
+@media (max-width: 768px) {
+    /* Ajuste do botão para quebra de texto */
+    .accordion .card-header .btn-link {
+        display: block; /* Faz o botão ocupar 100% da largura */
+        width: 100%; /* Força o botão a ocupar toda a largura */
+        padding: 15px 10px; /* Ajuste o padding */
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
+        text-align: left; /* Alinha o texto à esquerda */
+        white-space: normal; /* Permite a quebra de texto */
+        word-wrap: break-word; /* Quebra palavras longas */
+    }
+
+    /* Ajuste para garantir que o texto dentro do botão seja centralizado */
+    .accordion .card-header .btn-link span {
+        display: block; /* Garante que o texto ocupe a largura total */
+    }
+
+    /* Ajuste o título do FAQ */
+    .faq-section {
+        padding: 40px 10px;
+    }
+
+    /* Tamanho do título na versão mobile */
+    .faq-section h2 {
+        font-size: 1.75rem; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+}
+
+
+
+
+
 
