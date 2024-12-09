@@ -1,14 +1,29 @@
-/* Geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     background-color: #f8f9fa;
+}
+
+/* ----NAVBAR SECTION---- */  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar-nav {
+    display: flex;
+    gap: 15px;
 }
 
 /* Benefícios Introdução */
@@ -266,8 +281,6 @@ footer p {
     margin: 0;
 }
 
-
-
 /* Responsividade */
 @media (max-width: 768px) {
     .contact-section .container {
@@ -292,6 +305,8 @@ footer p {
     .navbar-nav {
         flex-direction: column;
         gap: 10px;
+        justify-content: center;
+        text-align: center;   
     }
     .home-section, .about-section, .services-section, .gallery-section, .testimonials-section, .faq-section, .contact-section {
         padding: 40px 15px;
@@ -310,7 +325,7 @@ footer p {
     .navbar-nav {
         flex-direction: row;
         gap: 10px;
-        justify-content: center;
+        display: block;
     }
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);

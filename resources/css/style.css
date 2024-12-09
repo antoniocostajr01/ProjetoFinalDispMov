@@ -1013,36 +1013,30 @@ footer p {
     }
 }
 
-/* ----RESPONSIVIDADE ---- */
 @media (max-width: 768px) {
-    /* Ajuste do botão para quebra de texto */
     .accordion .card-header .btn-link {
-        display: block; /* Faz o botão ocupar 100% da largura */
-        width: 100%; /* Força o botão a ocupar toda a largura */
-        padding: 15px 10px; /* Ajuste o padding */
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
-        text-align: left; /* Alinha o texto à esquerda */
-        white-space: normal; /* Permite a quebra de texto */
-        word-wrap: break-word; /* Quebra palavras longas */
+        display: block;
+        width: 100%; 
+        padding: 15px 10px;
+        font-size: 1.2rem;
+        text-align: left;
+        white-space: normal; 
+        word-wrap: break-word; 
     }
 
-    /* Ajuste para garantir que o texto dentro do botão seja centralizado */
     .accordion .card-header .btn-link span {
-        display: block; /* Garante que o texto ocupe a largura total */
+        display: block;
     }
 
-    /* Ajuste o título do FAQ */
     .faq-section {
         padding: 40px 10px;
     }
 
-    /* Tamanho do título na versão mobile */
     .faq-section h2 {
-        font-size: 1.75rem; /* Reduz o tamanho do título */
-        text-align: center; /* Centraliza o título */
+        font-size: 1.75rem;
+        text-align: center; 
     }
 }
-
 
 
 
