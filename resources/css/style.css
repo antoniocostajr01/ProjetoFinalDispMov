@@ -91,19 +91,19 @@ body{
     border-radius: 50%;
 }
 .bnf1{
-    background-image: url(/vendors/img/carregamento.png);
+    background-image: url(vendors/img/carregamento.png);
     background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bnf2{
-    background-image: url(/vendors/img/assistencia.png);
+    background-image: url(vendors/img/assistencia.png);
     background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bnf3{
-    background-image: url(/vendors/img/garantia.png);
+    background-image: url(vendors/img/garantia.png);
     background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
