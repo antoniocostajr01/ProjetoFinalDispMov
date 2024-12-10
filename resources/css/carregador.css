@@ -306,7 +306,7 @@ footer p {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
-        text-align: center;   
+        text-align: left;   
     }
     .home-section, .about-section, .services-section, .gallery-section, .testimonials-section, .faq-section, .contact-section {
         padding: 40px 15px;
@@ -368,5 +368,15 @@ footer p {
     }
     .newsletter-image, .newsletter-content {
         max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: left !important;
+    }
+    .navbar-nav .nav-item {
+        margin: 5px 0 !important;
     }
 }

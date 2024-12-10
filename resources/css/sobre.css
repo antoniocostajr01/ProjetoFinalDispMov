@@ -272,24 +272,6 @@ footer p {
     margin: 0;
 }
 
-/* Responsividade */
-@media only screen and (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-nav ul,
-    .social-nav ul {
-        justify-content: center;
-    }
-
-    .sitemap-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
 /* Responsividade para o menu */
 @media only screen and (max-width: 768px) {
     .navbar-toggler {
@@ -319,5 +301,15 @@ footer p {
     .team-member {
         width: 100%;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: left !important;
+    }
+    .navbar-nav .nav-item {
+        margin: 5px 0 !important;
     }
 }
