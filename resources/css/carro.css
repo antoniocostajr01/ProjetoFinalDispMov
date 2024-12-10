@@ -364,206 +364,140 @@ footer p {
      color: #0056b3;
 }
 
-
-@media only screen and (max-width: 400px) {
-     .navbar-nav {
-     flex-direction: column;
-     gap: 10px;
-     }
-     .home-section, .about-section, .services-section, .gallery-section, .testimonials-section, .faq-section, .contact-section {
-     padding: 40px 15px;
-     }
-     .gallery-grid {
-     grid-template-columns: 1fr;
-     }
-     .lightbox-content {
-     width: 90%;
-     }
-     #caption {
-     font-size: 16px;
-     }
-}
-@media only screen and (max-width: 800px) {
-     .navbar-nav {
-     flex-direction: row;
-     gap: 10px;
-     justify-content: center;
-     }
-     .gallery-grid {
-     grid-template-columns: repeat(2, 1fr);
-     }
-     .lightbox-content {
-     width: 85%;
-     }
-     #caption {
-     font-size: 17px;
-     }
-     .container {
-     padding: 0 15px;
-     }
-     .footer-content {
-     flex-direction: column;
-     }
-     .footer-menu {
-     flex-direction: column;
-     }
-}
-     @media only screen and (min-width: 1200px) {
-     .navbar-nav {
-     justify-content: space-around;
-     }
-     .gallery-grid {
-     grid-template-columns: repeat(3, 1fr);
-     }
-     .lightbox-content {
-     width: 80%;
-     }
-     #caption {
-     font-size: 18px;
-     }
-}
-
-@media only screen and (max-width: 768px) {
-     .newsletter-section {
-     flex-direction: column;
-     text-align: center;
-     }
-     .newsletter-image, .newsletter-content {
-     max-width: 100%;
-     }
-
-     .swiper-slide {
-          background-size:contain;
-          background-position: center;
-     }
-
-}
-
-@media only screen and (max-width : 950px){
-     .car-title{
-          margin-bottom: 0;
-     }
-
-     .swiper-button-next,
-     .swiper-button-prev{
-          display: none;
-     }
-
-     .mySwiper2 {
-          height: 600px;
-          width: 100%;
-     }
-
-     .mySwiper{
-          display: none;
-     }
-
-     .info-section{
-          background-color: #3b5998;
-          color: #fff;
-          padding: 70px;
-          margin: 5px 0;
-     }
-
-     .info-section h2{
-          font-weight: 500;
-          font-size: 65px;
-          text-align: center;
-          margin-bottom: 50px;
-     }
-
-     .info-section p{
-          font-size: 15px;
-          font-weight: 550;
-          text-align: right;
-          color:#f5f5f5;
-     }
-
-     .box-apresentation{
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          background-color: #e0d9d9;
-     }
-
-     .box-apresentation video{
-          width: 100%;
-     }
-
-     .text-video{
-          padding: 15px;
-          width: 100%;
-     }
-
-     .text-video h3{
-          text-align: center;
-          font-size: 50px;
-          margin-top: 30px;
-     }
-
-     .text-video p{
-          font-size: 20px;
-          text-align: left;
-          text-align: justify;
-          margin-top: 30px;
-     }
+ 
+ @media only screen and (max-width: 950px){
      .app-section {
-          background-color: #f5f5f5;
-          /* padding: 2em 1em; */
-          width:auto ;
+         background-color: #f5f5f5;
+         width:auto ;
      }
      .mockup-container {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
      }
      .mockup img {
-          width: auto;
-          border-radius: 10px;
-          height: 100%;
-          margin: 0 auto;
+         width: auto;
+         border-radius: 10px;
+         height: 100%;
+         margin: 0 auto;
      }
      .mockup-content {
-          margin-top: 30px;
-          padding: 0 1em;
-          text-align: center;
-          width: auto;
+         margin-top: 30px;
+         padding: 0 1em;
+         text-align: center;
+         width: auto;
      }
      .content h2 {
-          color: #2c5f2d;
+         color: #2c5f2d;
      }
      .content p {
-          color: #555;
-          font-size: 1.1em;
-          line-height: 1.5;
+         color: #555;
+         font-size: 1.1em;
+         line-height: 1.5;
      }
      .store-buttons a img {
-          max-height: 40px;
-          margin-right: 10px;
+         max-height: 40px;
+         margin-right: 10px;
      }
-}
-
-@media only screen and (max-width : 550px){
-     .car-title {
-          justify-content: center;
+ }
+ 
+ 
+ @media only screen and (max-width: 880px){
+     .caixa-texto p{
+         width: 600px;
      }
-
-     .car-title h1{
-          font-size: 45px;
-          font-weight: bold;
-          text-align: center;
-          margin-bottom: 20px;
+ 
+     .frota{
+         height: 500px;
+         width: 100vw;
      }
-     .car-title a {
-          border: 3px solid #2c5f2d;
-          color: #333;
-          font-size: 30px;
-          font-weight:600;
+     .carousel .carousel-item img{
+         height: 150px ;
+         width: 300px;
      }
-
-     .car-title a ion-icon{
-          color: #2c5f2d;
+ 
+     #carouselExampleIndicators{
+         display: flex;
+         justify-content: center;
      }
-
-}
+ 
+     .carousel-inner{
+         width: 400px;
+     }
+ 
+     .carousel-control-next, .carousel-control-prev{
+         display: none;
+     }
+ 
+ 
+     .contact-section .container {
+         flex-direction: column-reverse;
+     }
+ 
+     .contact-section .container form,
+     .contact-section .container input,
+     .contact-section .container select,
+     .contact-section .container textarea{
+         width: 90vw;
+     }
+ 
+     
+     .swiper-button-next,
+     .swiper-button-prev{
+         display: none;
+     }
+ 
+     .btn-link{
+         font-size: 20px;
+     }
+ }
+ 
+ 
+ @media only screen and (max-width: 400px) {
+     .navbar-nav {
+         flex-direction: row;
+         gap: 10px;
+         justify-content: center;
+     }
+     .gallery-grid {
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .lightbox-content {
+         width: 85%;
+     }
+     #caption {
+         font-size: 17px;
+     }  
+     .container {
+         padding: 0 15px;
+     }
+     .footer-content {
+         flex-direction: column;
+     }
+     .footer-menu {
+         flex-direction: column;
+     }
+     
+     .frota{
+         width: 100vw;
+     }
+     .carousel-inner{
+         width: 300px;
+     }
+     .faq-section p{
+         font-size: 15px;
+         text-overflow: clip;
+     }
+ 
+ }
+ 
+ @media only screen and (max-width: 400px) {
+     .navbar-nav {
+         flex-direction: column !important;
+         align-items: left !important;
+     }
+     .navbar-nav .nav-item {
+         margin: 5px 0 !important;
+     }
+ }
