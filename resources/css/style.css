@@ -7,8 +7,10 @@
 html{
     font-family: 'Roboto', sans-serif;
 }
+
 body{
     background-color: #f8f9fa !important;
+    overflow-x: hidden;
 }
 
 /* ----NAVBAR SECTION---- */  
