@@ -356,9 +356,9 @@ h2 span{
     color: #007bff;
 }
 
-.map-section .container{
+/* .map-section .container{
     width: 1240px;
-}
+} */
 
 .map-section p {
     margin-bottom: 40px;
@@ -820,6 +820,10 @@ footer p {
     .services-section{
         justify-content: center;
     }
+
+    .map-info ul{
+        margin-top: 30px;
+    }
     
     .infos{
         flex-basis: 770px;
@@ -928,6 +932,31 @@ footer p {
     .section-beneficios{
         font-size: 15px;
     }
+
+    .box-info {
+        flex-basis: 600px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .box-info h3{
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .box-info p{
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .box-icon-h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
     .caixa-texto p{
         width: 250px;
     }
@@ -946,6 +975,7 @@ footer p {
     .testimonials-carrossel{
         height: 700px;
     }
+
 
     .newsletter-content{
         width: 400px;
